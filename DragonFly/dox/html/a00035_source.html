@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Plik źródłowy /home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Macierz.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00035_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Macierz.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00035.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MACIERZ_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MACIERZ_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00053.html">Wektor.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00059.html">Wektor3D.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00135.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00135.html">Macierz</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:  </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">   33</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">Tab</a>[Templ_Size][Templ_Size]; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="a00135.html#ac65cabda1163146990325e448b3447a8">Macierz</a>(); </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="a00135.html#ac65cabda1163146990325e448b3447a8">Macierz</a>(<span class="keyword">const</span> std::initializer_list&lt;double&gt; &amp;rListaWsp);</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a00135.html#ac0e59c2a2bf8996dc671e3f664f40371">   55</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00135.html#ac0e59c2a2bf8996dc671e3f664f40371">operator () </a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Wie,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Kol)<span class="keyword"> const </span>{ assert((Wie &lt; Templ_Size)||(Kol &lt; Templ_Size)); <span class="keywordflow">return</span> <a class="code" href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">Tab</a>[Wie][Kol]; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00135.html#a3a814e6e2f38331de6de9130d561fc55">   68</a></span>&#160;  <span class="keywordtype">double</span>&amp; <a class="code" href="a00135.html#ac0e59c2a2bf8996dc671e3f664f40371">operator () </a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Wie,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Kol) { assert((Wie &lt; Templ_Size)||(Kol &lt; Templ_Size)); <span class="keywordflow">return</span> <a class="code" href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">Tab</a>[Wie][Kol]; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> <a class="code" href="a00135.html#ac6c96d8c01d4ee6c8252c834f1de7ef5">operator *</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp;Wktr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="a00135.html">Macierz&lt;Templ_Size&gt;</a> <a class="code" href="a00135.html#ac6c96d8c01d4ee6c8252c834f1de7ef5">operator *</a>(<span class="keyword">const</span> <a class="code" href="a00135.html">Macierz&lt;Templ_Size&gt;</a> &amp;MacRot) <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; <span class="comment">//inline void UstawMacRotZ_Radiany(double KatRadiany); : Macierz(cos(KatRadiany), -sin(KatRadiany),0, sin(Kat_rad), cos(Kat_rad),0,0,0,1) {}</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="a00135.html#aebf782fca9c3973531661b01983ab200">~Macierz</a>(); </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a00135.html#ac65cabda1163146990325e448b3447a8">   89</a></span>&#160;<a class="code" href="a00135.html#ac65cabda1163146990325e448b3447a8">Macierz&lt;Templ_Size&gt;::Macierz</a>()</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">/*Inicjalizuje tablice i dane zerami*/</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">double</span>* ElemTab: Tab)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      *ElemTab = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00135.html#a2d4bd57aefd9a4987ead2ebd29373d96">  111</a></span>&#160;<a class="code" href="a00135.html#ac65cabda1163146990325e448b3447a8">Macierz&lt;Templ_Size&gt;::Macierz</a>(<span class="keyword">const</span> std::initializer_list&lt;double&gt; &amp;rListaWsp) : <a class="code" href="a00135.html">Macierz</a>() </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  assert(rListaWsp.size() &lt;= Templ_Size*Templ_Size);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">double</span> Tab_tymczas[Templ_Size*Templ_Size];</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">int</span> Ind = -1;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">double</span> Wsp_i : rListaWsp)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    Tab_tymczas[++Ind] = Wsp_i;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  Ind = -1;    </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <span class="keywordtype">unsigned</span> Ind1 = 0;Ind1&lt;Templ_Size;++Ind1){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <span class="keywordtype">unsigned</span> Ind2=0;Ind2&lt;Templ_Size;++Ind2)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <a class="code" href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">Tab</a>[Ind1][Ind2] = Tab_tymczas[++Ind];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="a00135.html#ac6c96d8c01d4ee6c8252c834f1de7ef5">  149</a></span>&#160;<a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> <a class="code" href="a00135.html#ac6c96d8c01d4ee6c8252c834f1de7ef5">Macierz&lt;Templ_Size&gt;::operator *</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp;Wktr)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> Wek;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind1 = 0;Ind1&lt;Templ_Size;++Ind1){</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind2 = 0;Ind2&lt;Templ_Size;++Ind2){</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      Wek[Ind1] = Wek[Ind1] + Wktr[Ind2]*Tab[Ind1][Ind2];</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">return</span> Wek;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="a00135.html#a8a7d960d96a60a79f897ec27d2b41c5e">  177</a></span>&#160;<a class="code" href="a00135.html">Macierz&lt;Templ_Size&gt;</a> <a class="code" href="a00135.html#ac6c96d8c01d4ee6c8252c834f1de7ef5">Macierz&lt;Templ_Size&gt;::operator *</a>(<span class="keyword">const</span> <a class="code" href="a00135.html">Macierz&lt;Templ_Size&gt;</a> &amp;MacRot)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <a class="code" href="a00135.html">Macierz&lt;Templ_Size&gt;</a> MacRotTym;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind1 = 0;Ind1&lt;Templ_Size;++Ind1){</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind2 = 0;Ind2&lt;Templ_Size;++Ind2){</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind3 =0; Ind3&lt;Templ_Size;++Ind3)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        MacRotTym.<a class="code" href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">Tab</a>[Ind1][Ind2] += MacRot.<a class="code" href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">Tab</a>[Ind1][Ind3]*Tab[Ind3][Ind2];</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">return</span> MacRotTym;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="a00035.html#a4cfc70ccd0e4292372fa3b2d92e5af6d">  207</a></span>&#160;std::ostream &amp;<a class="code" href="a00035.html#a4cfc70ccd0e4292372fa3b2d92e5af6d">operator&lt;&lt;</a>(std::ostream &amp;StrmWy, <span class="keyword">const</span> <a class="code" href="a00135.html">Macierz&lt;Templ_Size&gt;</a> &amp;MacRot)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind1= 0; Ind1&lt;Templ_Size;++Ind1)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind2= 0; Ind2&lt;Templ_Size;++Ind2)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      StrmWy&lt;&lt;MacRot(Ind1, Ind2);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">return</span> StrmWy;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="a00135.html#aebf782fca9c3973531661b01983ab200">  223</a></span>&#160;<a class="code" href="a00135.html#aebf782fca9c3973531661b01983ab200">Macierz&lt;Templ_Size&gt;::~Macierz</a>(){}</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00135_html_ac6c96d8c01d4ee6c8252c834f1de7ef5"><div class="ttname"><a href="a00135.html#ac6c96d8c01d4ee6c8252c834f1de7ef5">Macierz::operator*</a></div><div class="ttdeci">Wektor&lt; Templ_Size &gt; operator*(const Wektor&lt; Templ_Size &gt; &amp;Wktr) const</div><div class="ttdoc">Mnoży macierz przez wektor.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00149">Macierz.hh:149</a></div></div>
+<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">Wektor3D.hh</a></div><div class="ttdoc">Plik zawiera defnicje klasy Wektor3D - instancji szablonu klasy Wektor&lt;&gt;</div></div>
+<div class="ttc" id="aa00135_html_ac65cabda1163146990325e448b3447a8"><div class="ttname"><a href="a00135.html#ac65cabda1163146990325e448b3447a8">Macierz::Macierz</a></div><div class="ttdeci">Macierz()</div><div class="ttdoc">Konstruktor Domyślny szablonu klasy Macierz.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00089">Macierz.hh:89</a></div></div>
+<div class="ttc" id="aa00135_html"><div class="ttname"><a href="a00135.html">Macierz</a></div><div class="ttdoc">Szablon Klasy modeluje pojęcie macierzy kwadratowej.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00025">Macierz.hh:25</a></div></div>
+<div class="ttc" id="aa00135_html_aebf782fca9c3973531661b01983ab200"><div class="ttname"><a href="a00135.html#aebf782fca9c3973531661b01983ab200">Macierz::~Macierz</a></div><div class="ttdeci">~Macierz()</div><div class="ttdoc">Destruktor klasy Macierz.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00223">Macierz.hh:223</a></div></div>
+<div class="ttc" id="aa00135_html_ac0e59c2a2bf8996dc671e3f664f40371"><div class="ttname"><a href="a00135.html#ac0e59c2a2bf8996dc671e3f664f40371">Macierz::operator()</a></div><div class="ttdeci">double operator()(unsigned int Wie, unsigned int Kol) const</div><div class="ttdoc">Pozwala na dostęp do składowej prywatnej szablonu (Tablicy dwu-wymiarowej) za pomocą operatora przeci...</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00055">Macierz.hh:55</a></div></div>
+<div class="ttc" id="aa00135_html_a8c1fb0e9f9a06367b64e53b195128edd"><div class="ttname"><a href="a00135.html#a8c1fb0e9f9a06367b64e53b195128edd">Macierz::Tab</a></div><div class="ttdeci">double Tab[Templ_Size][Templ_Size]</div><div class="ttdoc">Tablica statyczna zawierająca wartości macierzy kwadratowej.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00033">Macierz.hh:33</a></div></div>
+<div class="ttc" id="aa00035_html_a4cfc70ccd0e4292372fa3b2d92e5af6d"><div class="ttname"><a href="a00035.html#a4cfc70ccd0e4292372fa3b2d92e5af6d">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;StrmWy, const Macierz&lt; Templ_Size &gt; &amp;MacRot)</div><div class="ttdoc">Funkcja wyświetla na standardowe wyjście zawartość Macierzy Kwadratowej.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00207">Macierz.hh:207</a></div></div>
+<div class="ttc" id="aa00053_html"><div class="ttname"><a href="a00053.html">Wektor.hh</a></div><div class="ttdoc">Definicja szablonu i metod klasy Wektor.</div></div>
+<div class="ttc" id="aa00151_html"><div class="ttname"><a href="a00151.html">Wektor</a></div><div class="ttdoc">Szablon Klasy modeluje pojęcie Wektora.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00034">Wektor.hh:34</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_c0e5b474b65f5fb9aacabbe73e8767e4.html">PRACA DNI</a></li><li class="navelem"><a class="el" href="dir_3b030d9d5b9e48e84bcf677dcef751e4.html">Praca 7 czerwca</a></li><li class="navelem"><a class="el" href="dir_07e098effe35686b81f301e257e93fe3.html">DRONIK</a></li><li class="navelem"><a class="el" href="dir_2d88d5a780c219896f96d6acd5521563.html">prj</a></li><li class="navelem"><a class="el" href="dir_90684cf5b24e66c76aacf3334b813e09.html">inc</a></li><li class="navelem"><a class="el" href="a00035.html">Macierz.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

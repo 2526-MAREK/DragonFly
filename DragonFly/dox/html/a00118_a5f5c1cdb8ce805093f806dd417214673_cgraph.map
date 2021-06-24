@@ -1,0 +1,5 @@
+<map id="Dron::ObrotRotorow" name="Dron::ObrotRotorow">
+<area shape="rect" id="node1" title="Dokonuje obrotu rotorow drona." alt="" coords="5,46,140,73"/>
+<area shape="rect" id="node2" href="$a00130.html#a2f9bc3513b1afceca2d6804cdf23b567" title="Pozwala dodać dana wartośc do Katu orietnacji graniastoslupa." alt="" coords="193,5,385,47"/>
+<area shape="rect" id="node3" href="$a00130.html#a8942f71f9fb62912cd8b4a4febcdaa4d" title="Pozwala odjąć dana wartośc od Katu orietnacji graniastoslupa." alt="" coords="188,71,391,112"/>
+</map>

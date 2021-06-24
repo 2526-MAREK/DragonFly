@@ -1,0 +1,24 @@
+warning: doxygen no longer ships with the FreeSans font.
+You may want to clear or change DOT_FONTNAME.
+Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+warning: The selected output language "polish" has not been updated
+since release 1.8.2.  As a result some sentences may appear in English.
+
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/BrylaGeometryczna.cpp:54: warning: argument 'StrmWej' of command @param is not found in the argument list of NiePrawidlowoZapisano(const std::ofstream &StrmWyj)
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/BrylaGeometryczna.hh:105: warning: The following parameter of NiePrawidlowoZapisano(const std::ofstream &StrmWyj) is not documented:
+  parameter 'StrmWyj'
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/BrylaGeometryczna.cpp:90: warning: argument 'StrmWe' of command @param is not found in the argument list of OtworzonoPlik(const std::ofstream &StrmWy, const std::string &NazwaPliku)
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/BrylaGeometryczna.hh:113: warning: The following parameter of OtworzonoPlik(const std::ofstream &StrmWy, const std::string &NazwaPliku) is not documented:
+  parameter 'StrmWy'
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/BrylaGeometryczna.cpp:54: warning: argument 'StrmWej' of command @param is not found in the argument list of NiePrawidlowoZapisano(const std::ofstream &StrmWyj)
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/BrylaGeometryczna.cpp:62: warning: The following parameter of NiePrawidlowoZapisano(const std::ofstream &StrmWyj) is not documented:
+  parameter 'StrmWyj'
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/BrylaGeometryczna.cpp:90: warning: argument 'StrmWe' of command @param is not found in the argument list of OtworzonoPlik(const std::ofstream &StrmWy, const std::string &NazwaPliku)
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/BrylaGeometryczna.cpp:97: warning: The following parameter of OtworzonoPlik(const std::ofstream &StrmWy, const std::string &NazwaPliku) is not documented:
+  parameter 'StrmWy'
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Dron.hh:112: warning: The following parameter of Dron::Oblicz_i_Zapisz_WspGlbRotora(const Graniastoslup6 &Rotor) const is not documented:
+  parameter 'Rotor'
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/Dron.cpp:355: warning: unable to resolve link to 'Dron.hh::WykonajLot' for \link command
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Dron.hh:192: warning: The following parameter of Dron::WykonajPionowyLot(double DlugoscLotu, PzG::LaczeDoGNUPlota &Lacze) is not documented:
+  parameter 'Lacze'
+/home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/Dron.cpp:330: warning: unable to resolve link to 'Dron.hh::WykonajLot' for \link command

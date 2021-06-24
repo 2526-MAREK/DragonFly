@@ -1,0 +1,10 @@
+<map id="InterfejsUzytkownika::WyborAktywnegoDrona" name="InterfejsUzytkownika::WyborAktywnegoDrona">
+<area shape="rect" id="node1" title=" " alt="" coords="5,150,168,191"/>
+<area shape="rect" id="node2" href="$a00118.html#a2c2ceabfdcd40e4b9ab06e38a1076556" title="Pozwala sprawdzić czy dany Dron jest aktywny." alt="" coords="216,5,415,32"/>
+<area shape="rect" id="node3" href="$a00150.html#a6635108b35cbfdde12c1241c7cb420a3" title="Pozwala na dostęp do Aktywnego Drona." alt="" coords="221,56,409,83"/>
+<area shape="rect" id="node4" href="$a00150.html#adad577d32be09fa9db7c0a7a2d9f8939" title="Pozwala na dostęp do konkretnego drona." alt="" coords="253,107,377,133"/>
+<area shape="rect" id="node5" href="$a00118.html#a4eb41d8a8bf5ee9420cb1bb608e2e6b7" title="Pozwala na dostęp do Indesku Drona." alt="" coords="239,157,392,184"/>
+<area shape="rect" id="node6" href="$a00118.html#a404cc465b3d5c72cc318e755f91ed232" title="Daje dostęp do Polozenie Drona." alt="" coords="230,208,401,235"/>
+<area shape="rect" id="node7" href="$a00118.html#ad0caf519ee5cef6194d7f724bbc87f0e" title="Pozwala Ustawić Danego Drona jako aktywnego." alt="" coords="221,259,409,285"/>
+<area shape="rect" id="node8" href="$a00118.html#a2cc0e6db0f3726e0d7f0f5876db4605e" title="Pozwala Ustawić Danego Drona jako Nieaktywnego." alt="" coords="218,309,413,336"/>
+</map>

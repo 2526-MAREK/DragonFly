@@ -1,0 +1,8 @@
+<map id="TworzRotor" name="TworzRotor">
+<area shape="rect" id="node1" title="Tworzy plik z wierzchołkami były modelującej rotor drona." alt="" coords="5,13,93,39"/>
+<area shape="rect" id="node2" href="$a00020.html#a4ea2a27ea8a8f7cc1120e02ff55aeca5" title="Transformuje całą bryłę." alt="" coords="141,5,340,47"/>
+<area shape="rect" id="node3" href="$a00020.html#a8b8c1f4e12452428b25cde029d589d8b" title="Transformuje całą bryłę." alt="" coords="388,5,595,47"/>
+<area shape="rect" id="node4" href="$a00020.html#ab269d164c1963899fe0fac45c5875d2e" title="Transformuje współrzędne pojedynczego punktu." alt="" coords="643,13,849,39"/>
+<area shape="rect" id="node5" href="$a00020.html#a4a71702afa1952a86355f2b49b2968aa" title="Dokonuje obrotu wokół osi OZ." alt="" coords="897,13,1052,39"/>
+<area shape="rect" id="node6" href="$a00020.html#aa21c27789427909fa38a6539302b03ca" title="Przelicza wartość kąta ze stopni na radiany." alt="" coords="1100,13,1229,39"/>
+</map>

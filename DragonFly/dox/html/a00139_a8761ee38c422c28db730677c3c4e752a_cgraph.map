@@ -1,0 +1,6 @@
+<map id="Plaskowyz::Usun" name="Plaskowyz::Usun">
+<area shape="rect" id="node1" title="Usuwa bryłę reprezentującą Górę z Długą Grania." alt="" coords="5,56,127,83"/>
+<area shape="rect" id="node2" href="$a00017.html#a68f34048ab8ebf478f57fd99556e1463" title="Funkcja pomocniczna, sprawdzająca czy udało się zapisac dane." alt="" coords="191,5,353,32"/>
+<area shape="rect" id="node3" href="$a00017.html#a1090bc63d4d23df1314588c576782181" title="Funkcja pomocniczna, sprawdzająca poprawność otwartego pliku wejściowego." alt="" coords="219,56,325,83"/>
+<area shape="rect" id="node4" href="$a00111.html#a6a50b95a5133b9e03888441843f7e2ba" title="Pozwala na dostęp do NazwyPlikuBrylyFinalnej." alt="" coords="175,107,369,149"/>
+</map>

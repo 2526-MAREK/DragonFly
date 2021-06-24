@@ -1,0 +1,8 @@
+<map id="Dron" name="Dron">
+<area shape="rect" id="node1" title="Klasa modeluje pojęcie Drona w 3 wymiarach." alt="" coords="62,363,111,389"/>
+<area shape="rect" id="node2" href="$a00143.html" title="Klasa modeluje pojęcie Prostopadłościanu w 3 wymiarach." alt="" coords="25,273,148,300"/>
+<area shape="rect" id="node3" href="$a00111.html" title="Klasa modeluje pojęcie BrylyGeometrycznej." alt="" coords="153,184,287,211"/>
+<area shape="rect" id="node6" href="$a00127.html" title="Klasa modeluje pojęcie Graniastoslupa w 3 wymiarach." alt="" coords="172,273,281,300"/>
+<area shape="rect" id="node4" href="$a00151.html" title=" " alt="" coords="71,95,163,121"/>
+<area shape="rect" id="node5" href="$a00151.html" title="Szablon Klasy modeluje pojęcie Wektora." alt="" coords="41,5,194,32"/>
+</map>

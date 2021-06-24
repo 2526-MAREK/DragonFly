@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Plik źródłowy /home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00086_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00086.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="a00017.html">BrylaGeometryczna.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00038.html">Macierz2x2.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00032.html">InterfejsUzytkownika.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00050.html">Scena.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00086.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   14</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00086.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  PzG::LaczeDoGNUPlota  Lacze;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  Lacze.DodajNazwePliku(<span class="stringliteral">&quot;bryly_wzorcowe/plaszczyzna.dat&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#a6e3c7e6d1a9951c3283dd637275d64e6">PLIK_WLASCIWY__DRON1_KORPUS</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#a006a9471b4119eb1bec2a292c4315acd">PLIK_WLASCIWY__DRON1_ROTOR1</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#ac12a91e7d228562853617e2c0ea678d1">PLIK_WLASCIWY__DRON1_ROTOR2</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#a103096588ce806b970bbc303169c3fde">PLIK_WLASCIWY__DRON1_ROTOR3</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#a89ffdad9e2ea0df67866274330a10950">PLIK_WLASCIWY__DRON1_ROTOR4</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#a1749db85ab4dbc2e3e1a2d1043e485d4">PLIK_WLASCIWY__DRON2_KORPUS</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#a2789441753973ed69ce77974996448ea">PLIK_WLASCIWY__DRON2_ROTOR1</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#ada702919d023df75659eb3dd12475e29">PLIK_WLASCIWY__DRON2_ROTOR2</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#afa470c314a09603afc6f998dc6b90723">PLIK_WLASCIWY__DRON2_ROTOR3</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Lacze.DodajNazwePliku(<a class="code" href="a00020.html#a951e695fd984f50d2a2429ffe8d17b50">PLIK_WLASCIWY__DRON2_ROTOR4</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Lacze.DodajNazwePliku(<span class="stringliteral">&quot;dat/przeszkoda1.dat&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Lacze.DodajNazwePliku(<span class="stringliteral">&quot;dat/przeszkoda2.dat&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  Lacze.DodajNazwePliku(<span class="stringliteral">&quot;dat/przeszkoda3.dat&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  Lacze.DodajNazwePliku(<span class="stringliteral">&quot;dat/przeszkoda4.dat&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Lacze.ZmienTrybRys(PzG::TR_3D);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  Lacze.Inicjalizuj();  <span class="comment">// Tutaj startuje gnuplot.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="a00131.html">InterfejsUzytkownika</a> IU;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="a00151.html">Wektor3D</a> Wktr3D1 = {200,200,120};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  IU.<a class="code" href="a00131.html#a26e63d428ef4a205866117d017a2654e">UstawStrefeDzialaniaDrona</a>(Wktr3D1);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Lacze.UstawZakresX(0, Wktr3D1[<a class="code" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a58833a3110c570fb05130d40c365d1e4">X</a>]);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  Lacze.UstawZakresY(0, Wktr3D1[<a class="code" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a5596231eabd6cf29050967d5ac83ad84">Y</a>]);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  Lacze.UstawZakresZ(0, Wktr3D1[<a class="code" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54aa70478ce277ffc322f8e1e3418e07355">Z</a>]);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Lacze.UstawRotacjeXZ(64,65); <span class="comment">// Tutaj ustawiany jest widok</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="a00151.html">Wektor3D</a> Wktr3D2;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="a00143.html">Prostopadloscian</a> Pr1(<a class="code" href="a00020.html#ab9d785760df7d38b8c4fe1d84f4d978d">PLIK_WZORCOWEGO_SZESCIANU</a>, <a class="code" href="a00020.html#a6e3c7e6d1a9951c3283dd637275d64e6">PLIK_WLASCIWY__DRON1_KORPUS</a>, Wktr3D1={<a class="code" href="a00020.html#aea48e83258234ce95a24fd1293dd263b">SKALA_KORPUSU</a>},Wktr3D2={0,0,2},0);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr1(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#a006a9471b4119eb1bec2a292c4315acd">PLIK_WLASCIWY__DRON1_ROTOR1</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a00c18c9030c4c4a26fd749de8ca3b8e0">TRANSLACJA_ROTOR_LEWY_PRZEDNI</a>},0);   </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr2(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#a103096588ce806b970bbc303169c3fde">PLIK_WLASCIWY__DRON1_ROTOR3</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a18f39d9d8f51d469931ed86146b5ea17">TRANSLACJA_ROTOR_PRAWY_PRZEDNI</a>},0); </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr3(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#ac12a91e7d228562853617e2c0ea678d1">PLIK_WLASCIWY__DRON1_ROTOR2</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a24db7f4c6844e8670930a74990156a79">TRANSLACJA_ROTOR_LEWY_TYLNY</a>},0); </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr4(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#a89ffdad9e2ea0df67866274330a10950">PLIK_WLASCIWY__DRON1_ROTOR4</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a418e493572aed9390c03fc34fcbffabf">TRANSLACJA_ROTOR_PRAWY_TYLNY</a>},0); </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="a00115.html">Dron</a> Dron1(<span class="keyword">true</span>,1,Wktr3D1 ={20,20,0},0,Pr1,Gr1,Gr2,Gr3,Gr4);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="a00143.html">Prostopadloscian</a> Pr2(<a class="code" href="a00020.html#ab9d785760df7d38b8c4fe1d84f4d978d">PLIK_WZORCOWEGO_SZESCIANU</a>, <a class="code" href="a00020.html#a1749db85ab4dbc2e3e1a2d1043e485d4">PLIK_WLASCIWY__DRON2_KORPUS</a>, Wktr3D1={<a class="code" href="a00020.html#aea48e83258234ce95a24fd1293dd263b">SKALA_KORPUSU</a>},Wktr3D2={0,0,2},0);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr5(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#a2789441753973ed69ce77974996448ea">PLIK_WLASCIWY__DRON2_ROTOR1</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a00c18c9030c4c4a26fd749de8ca3b8e0">TRANSLACJA_ROTOR_LEWY_PRZEDNI</a>},0);   </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr6(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#afa470c314a09603afc6f998dc6b90723">PLIK_WLASCIWY__DRON2_ROTOR3</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a18f39d9d8f51d469931ed86146b5ea17">TRANSLACJA_ROTOR_PRAWY_PRZEDNI</a>},0); </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr7(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#ada702919d023df75659eb3dd12475e29">PLIK_WLASCIWY__DRON2_ROTOR2</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a24db7f4c6844e8670930a74990156a79">TRANSLACJA_ROTOR_LEWY_TYLNY</a>},0); </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="a00127.html">Graniastoslup6</a> Gr8(<a class="code" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>, <a class="code" href="a00020.html#a951e695fd984f50d2a2429ffe8d17b50">PLIK_WLASCIWY__DRON2_ROTOR4</a>, Wktr3D1={<a class="code" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>},Wktr3D2={<a class="code" href="a00020.html#a418e493572aed9390c03fc34fcbffabf">TRANSLACJA_ROTOR_PRAWY_TYLNY</a>},0); </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="a00115.html">Dron</a> Dron2(<span class="keyword">false</span>,2,Wktr3D1 ={90,170,0},0,Pr2,Gr5,Gr6,Gr7,Gr8);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::list&lt;std::shared_ptr&lt;BrylaGeometryczna&gt;&gt; Lst;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="a00147.html">Scena</a> Sc(Dron1, Dron2, Lacze, Lst);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  Wktr3D1={20,80,60};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  Wktr3D2={100,90,0};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  Sc.<a class="code" href="a00147.html#a9e45fdcef75a17aaa62ec92a0c4824d4">UtworzGoraZDlugaGraniaIDodajGoNaListe</a>(Wktr3D1, Wktr3D2);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  Wktr3D1={10,10,60};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  Wktr3D2={100,20,0};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  Sc.<a class="code" href="a00147.html#ab680c8e3f53623fb831442dbd31c20bd">UtworzGoraZOstrymSzczytemIDodajGoNaListe</a>(Wktr3D1, Wktr3D2);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  Wktr3D1={10,10,60};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Wktr3D2={20,100,0};  </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  Sc.<a class="code" href="a00147.html#ab680c8e3f53623fb831442dbd31c20bd">UtworzGoraZOstrymSzczytemIDodajGoNaListe</a>(Wktr3D1, Wktr3D2);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  Wktr3D1={50,60,15};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  Wktr3D2={150,105,0};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  Sc.<a class="code" href="a00147.html#a4f26be634e87f2c2f1027b99e7022265">UtworzPlaskowyzIDodajGoNaListe</a>(Wktr3D1, Wktr3D2);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; <span class="comment">/* if(!Sc.UtworzElementyPowierzchniNaScenie()){</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    std::cout&lt;&lt;&quot; Cos poszlo nie tak(Rysowanie Elementow na Scenie) !&quot;&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">    return -1;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">  }*/</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">if</span>(!Dron2.Oblicz_i_Zapisz_WspGlbDrona()){</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot; Cos poszlo nie tak(Rysowanie Drona 2) !&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  Lacze.Rysuj();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">if</span>(!Dron1.Oblicz_i_Zapisz_WspGlbDrona()){</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot; Cos poszlo nie tak(Rysowanie dron 1) !&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  Lacze.Rysuj();        <span class="comment">// Teraz powinno pojawic sie okienko gnuplota</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <span class="comment">// z rysunkiem, o ile istnieje plik &quot;prostopadloscian1.pow&quot;</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">int</span> koniec;                        </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  koniec =IU.<a class="code" href="a00131.html#ab2fc7d26649fefef233e2e0971e35146">Menu</a>(Sc); </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">return</span> koniec; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00020_html_a006a9471b4119eb1bec2a292c4315acd"><div class="ttname"><a href="a00020.html#a006a9471b4119eb1bec2a292c4315acd">PLIK_WLASCIWY__DRON1_ROTOR1</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON1_ROTOR1</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00024">Dron.hh:24</a></div></div>
+<div class="ttc" id="aa00020_html_a418e493572aed9390c03fc34fcbffabf"><div class="ttname"><a href="a00020.html#a418e493572aed9390c03fc34fcbffabf">TRANSLACJA_ROTOR_PRAWY_TYLNY</a></div><div class="ttdeci">#define TRANSLACJA_ROTOR_PRAWY_TYLNY</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00036">Dron.hh:36</a></div></div>
+<div class="ttc" id="aa00020_html_a18f39d9d8f51d469931ed86146b5ea17"><div class="ttname"><a href="a00020.html#a18f39d9d8f51d469931ed86146b5ea17">TRANSLACJA_ROTOR_PRAWY_PRZEDNI</a></div><div class="ttdeci">#define TRANSLACJA_ROTOR_PRAWY_PRZEDNI</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00034">Dron.hh:34</a></div></div>
+<div class="ttc" id="aa00147_html_a9e45fdcef75a17aaa62ec92a0c4824d4"><div class="ttname"><a href="a00147.html#a9e45fdcef75a17aaa62ec92a0c4824d4">Scena::UtworzGoraZDlugaGraniaIDodajGoNaListe</a></div><div class="ttdeci">bool UtworzGoraZDlugaGraniaIDodajGoNaListe(const Wektor3D &amp;Skala, const Wektor3D &amp;Polozenie)</div><div class="ttdoc">Tworzy Gore z dluga grania i dodaje ja na liste i scene.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00129">Scena.cpp:129</a></div></div>
+<div class="ttc" id="aa00053_html_a5a0dd761a0ae645ec0636cf638280b54a5596231eabd6cf29050967d5ac83ad84"><div class="ttname"><a href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a5596231eabd6cf29050967d5ac83ad84">Y</a></div><div class="ttdeci">@ Y</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00025">Wektor.hh:25</a></div></div>
+<div class="ttc" id="aa00053_html_a5a0dd761a0ae645ec0636cf638280b54aa70478ce277ffc322f8e1e3418e07355"><div class="ttname"><a href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54aa70478ce277ffc322f8e1e3418e07355">Z</a></div><div class="ttdeci">@ Z</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00025">Wektor.hh:25</a></div></div>
+<div class="ttc" id="aa00017_html"><div class="ttname"><a href="a00017.html">BrylaGeometryczna.hh</a></div><div class="ttdoc">Definicja klasy BrylaGeometryczna.</div></div>
+<div class="ttc" id="aa00020_html_a89ffdad9e2ea0df67866274330a10950"><div class="ttname"><a href="a00020.html#a89ffdad9e2ea0df67866274330a10950">PLIK_WLASCIWY__DRON1_ROTOR4</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON1_ROTOR4</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00027">Dron.hh:27</a></div></div>
+<div class="ttc" id="aa00131_html"><div class="ttname"><a href="a00131.html">InterfejsUzytkownika</a></div><div class="ttdoc">Klasa modeluje pojęcie Interfejsu Użytkownika.</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l00021">InterfejsUzytkownika.hh:21</a></div></div>
+<div class="ttc" id="aa00038_html"><div class="ttname"><a href="a00038.html">Macierz2x2.hh</a></div><div class="ttdoc">Plik defnicje klasy Macierz2x2 - instancji szablonu klasy Macierz.</div></div>
+<div class="ttc" id="aa00020_html_ab9d785760df7d38b8c4fe1d84f4d978d"><div class="ttname"><a href="a00020.html#ab9d785760df7d38b8c4fe1d84f4d978d">PLIK_WZORCOWEGO_SZESCIANU</a></div><div class="ttdeci">#define PLIK_WZORCOWEGO_SZESCIANU</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00019">Dron.hh:19</a></div></div>
+<div class="ttc" id="aa00147_html_a4f26be634e87f2c2f1027b99e7022265"><div class="ttname"><a href="a00147.html#a4f26be634e87f2c2f1027b99e7022265">Scena::UtworzPlaskowyzIDodajGoNaListe</a></div><div class="ttdeci">bool UtworzPlaskowyzIDodajGoNaListe(const Wektor3D &amp;Skala, const Wektor3D &amp;Polozenie)</div><div class="ttdoc">Tworzy Plaskowyz i dodaje go na liste i scene.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00099">Scena.cpp:99</a></div></div>
+<div class="ttc" id="aa00020_html_a24db7f4c6844e8670930a74990156a79"><div class="ttname"><a href="a00020.html#a24db7f4c6844e8670930a74990156a79">TRANSLACJA_ROTOR_LEWY_TYLNY</a></div><div class="ttdeci">#define TRANSLACJA_ROTOR_LEWY_TYLNY</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00035">Dron.hh:35</a></div></div>
+<div class="ttc" id="aa00020_html_a00c18c9030c4c4a26fd749de8ca3b8e0"><div class="ttname"><a href="a00020.html#a00c18c9030c4c4a26fd749de8ca3b8e0">TRANSLACJA_ROTOR_LEWY_PRZEDNI</a></div><div class="ttdeci">#define TRANSLACJA_ROTOR_LEWY_PRZEDNI</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00033">Dron.hh:33</a></div></div>
+<div class="ttc" id="aa00032_html"><div class="ttname"><a href="a00032.html">InterfejsUzytkownika.hh</a></div><div class="ttdoc">Definicja klasy InterfejstUzytkownika.</div></div>
+<div class="ttc" id="aa00131_html_a26e63d428ef4a205866117d017a2654e"><div class="ttname"><a href="a00131.html#a26e63d428ef4a205866117d017a2654e">InterfejsUzytkownika::UstawStrefeDzialaniaDrona</a></div><div class="ttdeci">void UstawStrefeDzialaniaDrona(const Wektor3D &amp;StrefaDzialania)</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l00030">InterfejsUzytkownika.hh:30</a></div></div>
+<div class="ttc" id="aa00020_html_a6e3c7e6d1a9951c3283dd637275d64e6"><div class="ttname"><a href="a00020.html#a6e3c7e6d1a9951c3283dd637275d64e6">PLIK_WLASCIWY__DRON1_KORPUS</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON1_KORPUS</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00023">Dron.hh:23</a></div></div>
+<div class="ttc" id="aa00020_html_aea48e83258234ce95a24fd1293dd263b"><div class="ttname"><a href="a00020.html#aea48e83258234ce95a24fd1293dd263b">SKALA_KORPUSU</a></div><div class="ttdeci">#define SKALA_KORPUSU</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00018">Dron.hh:18</a></div></div>
+<div class="ttc" id="aa00020_html_afa470c314a09603afc6f998dc6b90723"><div class="ttname"><a href="a00020.html#afa470c314a09603afc6f998dc6b90723">PLIK_WLASCIWY__DRON2_ROTOR3</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON2_ROTOR3</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00031">Dron.hh:31</a></div></div>
+<div class="ttc" id="aa00147_html_ab680c8e3f53623fb831442dbd31c20bd"><div class="ttname"><a href="a00147.html#ab680c8e3f53623fb831442dbd31c20bd">Scena::UtworzGoraZOstrymSzczytemIDodajGoNaListe</a></div><div class="ttdeci">bool UtworzGoraZOstrymSzczytemIDodajGoNaListe(const Wektor3D &amp;Skala, const Wektor3D &amp;Polozenie)</div><div class="ttdoc">Tworzy Gore z ostrym szczytem i dodaje ja na liste i scene.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00159">Scena.cpp:159</a></div></div>
+<div class="ttc" id="aa00086_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="a00086.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="a00086_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa00020_html_ac10437a5f7133af7fe8703e7e350105e"><div class="ttname"><a href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a></div><div class="ttdeci">#define PLIK_WZORCOWEGO_GRANIASTOSLUPA6</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00020">Dron.hh:20</a></div></div>
+<div class="ttc" id="aa00020_html_ada702919d023df75659eb3dd12475e29"><div class="ttname"><a href="a00020.html#ada702919d023df75659eb3dd12475e29">PLIK_WLASCIWY__DRON2_ROTOR2</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON2_ROTOR2</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00030">Dron.hh:30</a></div></div>
+<div class="ttc" id="aa00147_html"><div class="ttname"><a href="a00147.html">Scena</a></div><div class="ttdoc">Klasa modeluje pojęcie Sceny.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00045">Scena.hh:45</a></div></div>
+<div class="ttc" id="aa00050_html"><div class="ttname"><a href="a00050.html">Scena.hh</a></div><div class="ttdoc">Definicja klasy Scena.</div></div>
+<div class="ttc" id="aa00127_html"><div class="ttname"><a href="a00127.html">Graniastoslup6</a></div><div class="ttdoc">Klasa modeluje pojęcie Graniastoslupa w 3 wymiarach.</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00021">Graniastoslup6.hh:21</a></div></div>
+<div class="ttc" id="aa00115_html"><div class="ttname"><a href="a00115.html">Dron</a></div><div class="ttdoc">Klasa modeluje pojęcie Drona w 3 wymiarach.</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00058">Dron.hh:58</a></div></div>
+<div class="ttc" id="aa00143_html"><div class="ttname"><a href="a00143.html">Prostopadloscian</a></div><div class="ttdoc">Klasa modeluje pojęcie Prostopadłościanu w 3 wymiarach.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00029">Prostopadloscian.hh:29</a></div></div>
+<div class="ttc" id="aa00020_html_afb24cb0ce84e3b9f5e69c5b1ab635fa8"><div class="ttname"><a href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a></div><div class="ttdeci">#define SKALA_ROTORA</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00017">Dron.hh:17</a></div></div>
+<div class="ttc" id="aa00020_html_ac12a91e7d228562853617e2c0ea678d1"><div class="ttname"><a href="a00020.html#ac12a91e7d228562853617e2c0ea678d1">PLIK_WLASCIWY__DRON1_ROTOR2</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON1_ROTOR2</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00025">Dron.hh:25</a></div></div>
+<div class="ttc" id="aa00131_html_ab2fc7d26649fefef233e2e0971e35146"><div class="ttname"><a href="a00131.html#ab2fc7d26649fefef233e2e0971e35146">InterfejsUzytkownika::Menu</a></div><div class="ttdeci">int Menu(Scena &amp;Sc)</div><div class="ttdef"><b>Definition:</b> <a href="a00077_source.html#l00097">InterfejsUzytkownika.cpp:97</a></div></div>
+<div class="ttc" id="aa00020_html_a951e695fd984f50d2a2429ffe8d17b50"><div class="ttname"><a href="a00020.html#a951e695fd984f50d2a2429ffe8d17b50">PLIK_WLASCIWY__DRON2_ROTOR4</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON2_ROTOR4</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00032">Dron.hh:32</a></div></div>
+<div class="ttc" id="aa00053_html_a5a0dd761a0ae645ec0636cf638280b54a58833a3110c570fb05130d40c365d1e4"><div class="ttname"><a href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a58833a3110c570fb05130d40c365d1e4">X</a></div><div class="ttdeci">@ X</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00025">Wektor.hh:25</a></div></div>
+<div class="ttc" id="aa00020_html_a1749db85ab4dbc2e3e1a2d1043e485d4"><div class="ttname"><a href="a00020.html#a1749db85ab4dbc2e3e1a2d1043e485d4">PLIK_WLASCIWY__DRON2_KORPUS</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON2_KORPUS</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00028">Dron.hh:28</a></div></div>
+<div class="ttc" id="aa00020_html_a2789441753973ed69ce77974996448ea"><div class="ttname"><a href="a00020.html#a2789441753973ed69ce77974996448ea">PLIK_WLASCIWY__DRON2_ROTOR1</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON2_ROTOR1</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00029">Dron.hh:29</a></div></div>
+<div class="ttc" id="aa00151_html"><div class="ttname"><a href="a00151.html">Wektor&lt; 3 &gt;</a></div></div>
+<div class="ttc" id="aa00020_html_a103096588ce806b970bbc303169c3fde"><div class="ttname"><a href="a00020.html#a103096588ce806b970bbc303169c3fde">PLIK_WLASCIWY__DRON1_ROTOR3</a></div><div class="ttdeci">#define PLIK_WLASCIWY__DRON1_ROTOR3</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00026">Dron.hh:26</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_c0e5b474b65f5fb9aacabbe73e8767e4.html">PRACA DNI</a></li><li class="navelem"><a class="el" href="dir_3b030d9d5b9e48e84bcf677dcef751e4.html">Praca 7 czerwca</a></li><li class="navelem"><a class="el" href="dir_07e098effe35686b81f301e257e93fe3.html">DRONIK</a></li><li class="navelem"><a class="el" href="dir_2d88d5a780c219896f96d6acd5521563.html">prj</a></li><li class="navelem"><a class="el" href="dir_97ec5b20d4c8dde2671e1bf6e5dc50de.html">src</a></li><li class="navelem"><a class="el" href="a00086.html">main.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

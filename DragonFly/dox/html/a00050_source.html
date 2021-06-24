@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Plik źródłowy /home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Scena.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00050_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Scena.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00050.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SCENA_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SCENA_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;list&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00020.html">Dron.hh</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="a00023.html">GoraZDlugaGrania.hh</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="a00026.html">GoraZOstrymSzczytem.hh</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="a00044.html">Plaskowyz.hh</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="a00050.html#a382f901f4153be6e07ae4deec40c17e9">   19</a></span>&#160;<span class="preprocessor">#define PLIK_WZORCOWEGO_SZESCIANU_NA_POWIERZCHNI &quot;bryly_wzorcowe/szescian_na_powierzchni.dat&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="a00050.html#ada927e1a05230e1075a2267ecc5870d2">   20</a></span>&#160;<span class="preprocessor">#define PLIK_WLASCIWY__PRZESZKODA1 &quot;dat/przeszkoda1.dat&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00050.html#a7f40e8c0ad25b8590fd695faf6ebe1c8">   21</a></span>&#160;<span class="preprocessor">#define PLIK_WLASCIWY__PRZESZKODA2 &quot;dat/przeszkoda2.dat&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00050.html#afec17fc2772f45e1aa2c077674a5c090">   22</a></span>&#160;<span class="preprocessor">#define PLIK_WLASCIWY__PRZESZKODA3 &quot;dat/przeszkoda3.dat&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00050.html#a5b48052926b4323de4a8579507c0529d">   23</a></span>&#160;<span class="preprocessor">#define PLIK_WLASCIWY__PRZESZKODA4 &quot;dat/przeszkoda4.dat&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="a00115.html">Dron</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00050.html#abaddac347b50f56171eb0e2aeaeaf333">   27</a></span>&#160;<span class="preprocessor">#define ILOSC_DRONOW 2</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00147.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00147.html">Scena</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:    </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00147.html#ae02f29f93fb55c541e316ab619ae6aa5">   52</a></span>&#160;  <a class="code" href="a00115.html">Dron</a> <a class="code" href="a00147.html#ae02f29f93fb55c541e316ab619ae6aa5">TabDronow</a>[<a class="code" href="a00050.html#abaddac347b50f56171eb0e2aeaeaf333">ILOSC_DRONOW</a>];</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00147.html#ae8d7d121ba09af12c456a6dfe6da316b">   56</a></span>&#160;  PzG::LaczeDoGNUPlota <a class="code" href="a00147.html#ae8d7d121ba09af12c456a6dfe6da316b">Lacze</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00147.html#ad88ffc153565a0b0a42c31088868ae91">   61</a></span>&#160;  std::list&lt;std::shared_ptr&lt;BrylaGeometryczna&gt;&gt; <a class="code" href="a00147.html#ad88ffc153565a0b0a42c31088868ae91">Lst</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00147.html#a1194ca71d8a5f3f56465a0c5a64fbd49">   68</a></span>&#160;  std::list&lt;std::string&gt; <a class="code" href="a00147.html#a1194ca71d8a5f3f56465a0c5a64fbd49">NazwyWolnychPlikow</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a00147.html#a019efcdc17e96aa85e04afa981639c32">   74</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00147.html#a019efcdc17e96aa85e04afa981639c32">AktualnaLiczbaPrzeszkod</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00147.html#aa450a93935f0145699d5f8d8d12252e6">   83</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00147.html#aa450a93935f0145699d5f8d8d12252e6">MaksPrzeszkodOsiagnieteWProgramie</a>; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="a00147.html#a8f9fe11b4cfef890123a2acc94672e17">   88</a></span>&#160;  <a class="code" href="a00147.html#a8f9fe11b4cfef890123a2acc94672e17">Scena</a>() : <a class="code" href="a00147.html#ae02f29f93fb55c541e316ab619ae6aa5">TabDronow</a>(), <a class="code" href="a00147.html#ae8d7d121ba09af12c456a6dfe6da316b">Lacze</a>(), <a class="code" href="a00147.html#ad88ffc153565a0b0a42c31088868ae91">Lst</a>() {};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="a00147.html#a8f9fe11b4cfef890123a2acc94672e17">Scena</a>(<span class="keyword">const</span> <a class="code" href="a00115.html">Dron</a> &amp;Dron1,<span class="keyword">const</span> <a class="code" href="a00115.html">Dron</a>&amp; Dron2, <span class="keyword">const</span> PzG::LaczeDoGNUPlota &amp;LaczeTym, std::list&lt;std::shared_ptr&lt;BrylaGeometryczna&gt;&gt;&amp; LstTym);</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="a00147.html#adad577d32be09fa9db7c0a7a2d9f8939">  104</a></span>&#160;  <span class="keyword">inline</span> <a class="code" href="a00115.html">Dron</a>&amp; <a class="code" href="a00147.html#adad577d32be09fa9db7c0a7a2d9f8939">WezDrona</a>(<span class="keywordtype">int</span> Ind){assert(Ind &lt; <a class="code" href="a00050.html#abaddac347b50f56171eb0e2aeaeaf333">ILOSC_DRONOW</a>); <span class="keywordflow">return</span> <a class="code" href="a00147.html#ae02f29f93fb55c541e316ab619ae6aa5">TabDronow</a>[Ind];}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">//Wektor3D WezPolozenieDrona(int Ind) const {assert(Ind &lt; ILOSC_DRONOW); return TabDronow[Ind].WezPolozenieDrona();}</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span>  <span class="keyword">const</span> <a class="code" href="a00115.html">Dron</a>&amp; <a class="code" href="a00147.html#a6635108b35cbfdde12c1241c7cb420a3">WezAktywnegoDrona</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">//const Dron&amp; WezNieAktywnegoDrona() const;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"></span>  <a class="code" href="a00115.html">Dron</a>&amp; <a class="code" href="a00147.html#ab698c9454cb8becf448046e30126e441">UzyjAktywnegoDrona</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">//Dron&amp; UzyjNieAktywnegoDrona();</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="a00147.html#abd0f961c36ea82acafff76fb783fbf46">  118</a></span>&#160;<span class="keyword">const</span> std::list&lt;std::shared_ptr&lt;BrylaGeometryczna&gt;&gt;&amp; <a class="code" href="a00147.html#abd0f961c36ea82acafff76fb783fbf46">WezListe</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="a00147.html#ad88ffc153565a0b0a42c31088868ae91">Lst</a>;}    </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="a00147.html#a7a5748c8edd55038b620d0533be52246">  122</a></span>&#160;  PzG::LaczeDoGNUPlota&amp; <a class="code" href="a00147.html#a7a5748c8edd55038b620d0533be52246">UzyjLacza</a>(){<span class="keywordflow">return</span> <a class="code" href="a00147.html#ae8d7d121ba09af12c456a6dfe6da316b">Lacze</a>;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="a00147.html#a03133aed8a628eee7ec96ca90952a26b">  128</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00147.html#a03133aed8a628eee7ec96ca90952a26b">DodajElementNaListe</a>(std::shared_ptr&lt;BrylaGeometryczna&gt; &amp;LstTym) { <a class="code" href="a00147.html#ad88ffc153565a0b0a42c31088868ae91">Lst</a>.push_back(LstTym);}</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="a00147.html#a81229dce10beda0ad3d520c3ea6d4e99">  134</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> std::shared_ptr&lt;BrylaGeometryczna&gt;&amp; <a class="code" href="a00147.html#a81229dce10beda0ad3d520c3ea6d4e99">WezPierwszyElementListy</a>()<span class="keyword"> const </span>{  <span class="keywordflow">return</span> *<a class="code" href="a00147.html#ad88ffc153565a0b0a42c31088868ae91">Lst</a>.begin();}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">//bool UtworzElementyPowierzchniNaScenie() const;</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment"></span>  <span class="keywordtype">bool</span> <a class="code" href="a00147.html#a4f26be634e87f2c2f1027b99e7022265">UtworzPlaskowyzIDodajGoNaListe</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Skala, <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Polozenie);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00147.html#a9e45fdcef75a17aaa62ec92a0c4824d4">UtworzGoraZDlugaGraniaIDodajGoNaListe</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Skala, <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Polozenie);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00147.html#ab680c8e3f53623fb831442dbd31c20bd">UtworzGoraZOstrymSzczytemIDodajGoNaListe</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Skala, <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Polozenie);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00147.html#a47ec3850a76a5e97bd4cb993a5fc09ba">UsunElementzZListyISceny</a>(<span class="keywordtype">int</span> NumerElementuListy);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  std::string <a class="code" href="a00147.html#a67aa54378248fd84b2e63b7405baacc3">TworzNazwePlikuPrzeszkody</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NrPrzeszkody);</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="a00147.html#aeece59475c33c0c552f6987510ecccbf">  159</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00147.html#aeece59475c33c0c552f6987510ecccbf">ZwiekszLiczbePrzeszkod</a>(){++<a class="code" href="a00147.html#a019efcdc17e96aa85e04afa981639c32">AktualnaLiczbaPrzeszkod</a>;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="a00147.html#aa387e6a67b6f844f1276ff00f9127712">  165</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00147.html#aa387e6a67b6f844f1276ff00f9127712">WezAktualnaLiczbePrzeszkod</a>()<span class="keyword">const </span>{<span class="keywordflow">return</span> <a class="code" href="a00147.html#a019efcdc17e96aa85e04afa981639c32">AktualnaLiczbaPrzeszkod</a>;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="a00147.html#aa1deaddb5e603430b888be7c9074c41f">  171</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00147.html#aa1deaddb5e603430b888be7c9074c41f">WezMaksPrzeszkodOsiagnieteWProgramie</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="a00147.html#aa450a93935f0145699d5f8d8d12252e6">MaksPrzeszkodOsiagnieteWProgramie</a>;}</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00147.html#a67dcedb2897482d977d0efacedfb72b2">UsunNadmiarowePlikiPrzeskod</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="a00147.html#a015c0aa09046c6308d5aeeef81b7caa2">  179</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00147.html#a015c0aa09046c6308d5aeeef81b7caa2">SprawdzMaksymalnaIloscPrzeszkodOsiagnietaWProgramie</a>() { </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="a00147.html#a019efcdc17e96aa85e04afa981639c32">AktualnaLiczbaPrzeszkod</a>&gt;<a class="code" href="a00147.html#aa450a93935f0145699d5f8d8d12252e6">MaksPrzeszkodOsiagnieteWProgramie</a>) <a class="code" href="a00147.html#aa450a93935f0145699d5f8d8d12252e6">MaksPrzeszkodOsiagnieteWProgramie</a> = <a class="code" href="a00147.html#a019efcdc17e96aa85e04afa981639c32">AktualnaLiczbaPrzeszkod</a>;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00147.html#ad882b3d3c934c64c5e90a63246a47943">  184</a></span>&#160;  <a class="code" href="a00147.html#ad882b3d3c934c64c5e90a63246a47943">~Scena</a>() {}</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00147_html_ae8d7d121ba09af12c456a6dfe6da316b"><div class="ttname"><a href="a00147.html#ae8d7d121ba09af12c456a6dfe6da316b">Scena::Lacze</a></div><div class="ttdeci">PzG::LaczeDoGNUPlota Lacze</div><div class="ttdoc">Pozwala połączyc się z programem GnuPlot Pole, które pozwala połączyc się z programem gnuplot.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00056">Scena.hh:56</a></div></div>
+<div class="ttc" id="aa00147_html_a47ec3850a76a5e97bd4cb993a5fc09ba"><div class="ttname"><a href="a00147.html#a47ec3850a76a5e97bd4cb993a5fc09ba">Scena::UsunElementzZListyISceny</a></div><div class="ttdeci">bool UsunElementzZListyISceny(int NumerElementuListy)</div><div class="ttdoc">Usuwa wybrany element z listy.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00067">Scena.cpp:67</a></div></div>
+<div class="ttc" id="aa00044_html"><div class="ttname"><a href="a00044.html">Plaskowyz.hh</a></div><div class="ttdoc">Definicja klasy Plaskowyz.</div></div>
+<div class="ttc" id="aa00147_html_aa450a93935f0145699d5f8d8d12252e6"><div class="ttname"><a href="a00147.html#aa450a93935f0145699d5f8d8d12252e6">Scena::MaksPrzeszkodOsiagnieteWProgramie</a></div><div class="ttdeci">unsigned int MaksPrzeszkodOsiagnieteWProgramie</div><div class="ttdoc">Określa maksymalna ilość przeszkód jaka pojawiła się na scenie.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00083">Scena.hh:83</a></div></div>
+<div class="ttc" id="aa00147_html_a015c0aa09046c6308d5aeeef81b7caa2"><div class="ttname"><a href="a00147.html#a015c0aa09046c6308d5aeeef81b7caa2">Scena::SprawdzMaksymalnaIloscPrzeszkodOsiagnietaWProgramie</a></div><div class="ttdeci">void SprawdzMaksymalnaIloscPrzeszkodOsiagnietaWProgramie()</div><div class="ttdoc">Sprawdza czy aktualna liczba przeszkod jest ta najwieksza osiągniętą w programie.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00179">Scena.hh:179</a></div></div>
+<div class="ttc" id="aa00147_html_a9e45fdcef75a17aaa62ec92a0c4824d4"><div class="ttname"><a href="a00147.html#a9e45fdcef75a17aaa62ec92a0c4824d4">Scena::UtworzGoraZDlugaGraniaIDodajGoNaListe</a></div><div class="ttdeci">bool UtworzGoraZDlugaGraniaIDodajGoNaListe(const Wektor3D &amp;Skala, const Wektor3D &amp;Polozenie)</div><div class="ttdoc">Tworzy Gore z dluga grania i dodaje ja na liste i scene.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00129">Scena.cpp:129</a></div></div>
+<div class="ttc" id="aa00147_html_a67dcedb2897482d977d0efacedfb72b2"><div class="ttname"><a href="a00147.html#a67dcedb2897482d977d0efacedfb72b2">Scena::UsunNadmiarowePlikiPrzeskod</a></div><div class="ttdeci">void UsunNadmiarowePlikiPrzeskod()</div><div class="ttdoc">Usuwa &quot;Nadmiarowe&quot; pliki stworzone w trakcie pracy programu.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00198">Scena.cpp:198</a></div></div>
+<div class="ttc" id="aa00147_html_ad88ffc153565a0b0a42c31088868ae91"><div class="ttname"><a href="a00147.html#ad88ffc153565a0b0a42c31088868ae91">Scena::Lst</a></div><div class="ttdeci">std::list&lt; std::shared_ptr&lt; BrylaGeometryczna &gt; &gt; Lst</div><div class="ttdoc">Przechowuje na liscie wskazniki do typu BrylaGeometryczna Pole przechowujące wskazniki na typ BrylaGe...</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00061">Scena.hh:61</a></div></div>
+<div class="ttc" id="aa00147_html_a019efcdc17e96aa85e04afa981639c32"><div class="ttname"><a href="a00147.html#a019efcdc17e96aa85e04afa981639c32">Scena::AktualnaLiczbaPrzeszkod</a></div><div class="ttdeci">unsigned int AktualnaLiczbaPrzeszkod</div><div class="ttdoc">Określa ilość aktualnych przeszkod na scenie.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00074">Scena.hh:74</a></div></div>
+<div class="ttc" id="aa00147_html_a1194ca71d8a5f3f56465a0c5a64fbd49"><div class="ttname"><a href="a00147.html#a1194ca71d8a5f3f56465a0c5a64fbd49">Scena::NazwyWolnychPlikow</a></div><div class="ttdeci">std::list&lt; std::string &gt; NazwyWolnychPlikow</div><div class="ttdoc">Przechowuje na liscie nazwy wolnych plikow.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00068">Scena.hh:68</a></div></div>
+<div class="ttc" id="aa00147_html_aa387e6a67b6f844f1276ff00f9127712"><div class="ttname"><a href="a00147.html#aa387e6a67b6f844f1276ff00f9127712">Scena::WezAktualnaLiczbePrzeszkod</a></div><div class="ttdeci">unsigned int WezAktualnaLiczbePrzeszkod() const</div><div class="ttdoc">Pozwala na dostęp do aktualnej liczby przeszkod na scenie.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00165">Scena.hh:165</a></div></div>
+<div class="ttc" id="aa00147_html_ad882b3d3c934c64c5e90a63246a47943"><div class="ttname"><a href="a00147.html#ad882b3d3c934c64c5e90a63246a47943">Scena::~Scena</a></div><div class="ttdeci">~Scena()</div><div class="ttdoc">Destruktor klasy Scena.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00184">Scena.hh:184</a></div></div>
+<div class="ttc" id="aa00147_html_ab698c9454cb8becf448046e30126e441"><div class="ttname"><a href="a00147.html#ab698c9454cb8becf448046e30126e441">Scena::UzyjAktywnegoDrona</a></div><div class="ttdeci">Dron &amp; UzyjAktywnegoDrona()</div><div class="ttdoc">Pozwala Użyć aktywnego Drona.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00036">Scena.cpp:36</a></div></div>
+<div class="ttc" id="aa00147_html_aa1deaddb5e603430b888be7c9074c41f"><div class="ttname"><a href="a00147.html#aa1deaddb5e603430b888be7c9074c41f">Scena::WezMaksPrzeszkodOsiagnieteWProgramie</a></div><div class="ttdeci">unsigned int WezMaksPrzeszkodOsiagnieteWProgramie() const</div><div class="ttdoc">Pozwala na dostęp do maksymalnej liczby przeszkod osiągniętej w programie.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00171">Scena.hh:171</a></div></div>
+<div class="ttc" id="aa00147_html_a4f26be634e87f2c2f1027b99e7022265"><div class="ttname"><a href="a00147.html#a4f26be634e87f2c2f1027b99e7022265">Scena::UtworzPlaskowyzIDodajGoNaListe</a></div><div class="ttdeci">bool UtworzPlaskowyzIDodajGoNaListe(const Wektor3D &amp;Skala, const Wektor3D &amp;Polozenie)</div><div class="ttdoc">Tworzy Plaskowyz i dodaje go na liste i scene.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00099">Scena.cpp:99</a></div></div>
+<div class="ttc" id="aa00147_html_a03133aed8a628eee7ec96ca90952a26b"><div class="ttname"><a href="a00147.html#a03133aed8a628eee7ec96ca90952a26b">Scena::DodajElementNaListe</a></div><div class="ttdeci">void DodajElementNaListe(std::shared_ptr&lt; BrylaGeometryczna &gt; &amp;LstTym)</div><div class="ttdoc">Pozwala dodać element na liste.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00128">Scena.hh:128</a></div></div>
+<div class="ttc" id="aa00147_html_a8f9fe11b4cfef890123a2acc94672e17"><div class="ttname"><a href="a00147.html#a8f9fe11b4cfef890123a2acc94672e17">Scena::Scena</a></div><div class="ttdeci">Scena()</div><div class="ttdoc">Konstruktor Domyślny klasy Scena.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00088">Scena.hh:88</a></div></div>
+<div class="ttc" id="aa00147_html_a7a5748c8edd55038b620d0533be52246"><div class="ttname"><a href="a00147.html#a7a5748c8edd55038b620d0533be52246">Scena::UzyjLacza</a></div><div class="ttdeci">PzG::LaczeDoGNUPlota &amp; UzyjLacza()</div><div class="ttdoc">Pozwala Użyć Lacza Do GnuPlota.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00122">Scena.hh:122</a></div></div>
+<div class="ttc" id="aa00026_html"><div class="ttname"><a href="a00026.html">GoraZOstrymSzczytem.hh</a></div><div class="ttdoc">Definicja klasy GoraZOstrymSzczytem.</div></div>
+<div class="ttc" id="aa00147_html_ab680c8e3f53623fb831442dbd31c20bd"><div class="ttname"><a href="a00147.html#ab680c8e3f53623fb831442dbd31c20bd">Scena::UtworzGoraZOstrymSzczytemIDodajGoNaListe</a></div><div class="ttdeci">bool UtworzGoraZOstrymSzczytemIDodajGoNaListe(const Wektor3D &amp;Skala, const Wektor3D &amp;Polozenie)</div><div class="ttdoc">Tworzy Gore z ostrym szczytem i dodaje ja na liste i scene.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00159">Scena.cpp:159</a></div></div>
+<div class="ttc" id="aa00147_html_a6635108b35cbfdde12c1241c7cb420a3"><div class="ttname"><a href="a00147.html#a6635108b35cbfdde12c1241c7cb420a3">Scena::WezAktywnegoDrona</a></div><div class="ttdeci">const Dron &amp; WezAktywnegoDrona() const</div><div class="ttdoc">Pozwala na dostęp do Aktywnego Drona.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00023">Scena.cpp:23</a></div></div>
+<div class="ttc" id="aa00147_html_aeece59475c33c0c552f6987510ecccbf"><div class="ttname"><a href="a00147.html#aeece59475c33c0c552f6987510ecccbf">Scena::ZwiekszLiczbePrzeszkod</a></div><div class="ttdeci">void ZwiekszLiczbePrzeszkod()</div><div class="ttdoc">Zwieksza Liczbe przeszkod na scenie.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00159">Scena.hh:159</a></div></div>
+<div class="ttc" id="aa00147_html"><div class="ttname"><a href="a00147.html">Scena</a></div><div class="ttdoc">Klasa modeluje pojęcie Sceny.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00045">Scena.hh:45</a></div></div>
+<div class="ttc" id="aa00147_html_abd0f961c36ea82acafff76fb783fbf46"><div class="ttname"><a href="a00147.html#abd0f961c36ea82acafff76fb783fbf46">Scena::WezListe</a></div><div class="ttdeci">const std::list&lt; std::shared_ptr&lt; BrylaGeometryczna &gt; &gt; &amp; WezListe() const</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00118">Scena.hh:118</a></div></div>
+<div class="ttc" id="aa00020_html"><div class="ttname"><a href="a00020.html">Dron.hh</a></div><div class="ttdoc">Definicja klasy Dron.</div></div>
+<div class="ttc" id="aa00147_html_a67aa54378248fd84b2e63b7405baacc3"><div class="ttname"><a href="a00147.html#a67aa54378248fd84b2e63b7405baacc3">Scena::TworzNazwePlikuPrzeszkody</a></div><div class="ttdeci">std::string TworzNazwePlikuPrzeszkody(unsigned int NrPrzeszkody)</div><div class="ttdoc">Tworzy nazwe pliku przeszkody.</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00185">Scena.cpp:185</a></div></div>
+<div class="ttc" id="aa00147_html_adad577d32be09fa9db7c0a7a2d9f8939"><div class="ttname"><a href="a00147.html#adad577d32be09fa9db7c0a7a2d9f8939">Scena::WezDrona</a></div><div class="ttdeci">Dron &amp; WezDrona(int Ind)</div><div class="ttdoc">Pozwala na dostęp do konkretnego drona.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00104">Scena.hh:104</a></div></div>
+<div class="ttc" id="aa00115_html"><div class="ttname"><a href="a00115.html">Dron</a></div><div class="ttdoc">Klasa modeluje pojęcie Drona w 3 wymiarach.</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00058">Dron.hh:58</a></div></div>
+<div class="ttc" id="aa00050_html_abaddac347b50f56171eb0e2aeaeaf333"><div class="ttname"><a href="a00050.html#abaddac347b50f56171eb0e2aeaeaf333">ILOSC_DRONOW</a></div><div class="ttdeci">#define ILOSC_DRONOW</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00027">Scena.hh:27</a></div></div>
+<div class="ttc" id="aa00147_html_ae02f29f93fb55c541e316ab619ae6aa5"><div class="ttname"><a href="a00147.html#ae02f29f93fb55c541e316ab619ae6aa5">Scena::TabDronow</a></div><div class="ttdeci">Dron TabDronow[ILOSC_DRONOW]</div><div class="ttdoc">Zawiera Wszystkie dotępne drony w programie Pole, które jest statyczna tablica dronów,...</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00052">Scena.hh:52</a></div></div>
+<div class="ttc" id="aa00023_html"><div class="ttname"><a href="a00023.html">GoraZDlugaGrania.hh</a></div><div class="ttdoc">Definicja klasy GoraZDlugaGrania.</div></div>
+<div class="ttc" id="aa00147_html_a81229dce10beda0ad3d520c3ea6d4e99"><div class="ttname"><a href="a00147.html#a81229dce10beda0ad3d520c3ea6d4e99">Scena::WezPierwszyElementListy</a></div><div class="ttdeci">const std::shared_ptr&lt; BrylaGeometryczna &gt; &amp; WezPierwszyElementListy() const</div><div class="ttdoc">Pozwala na dostęp do pierwszego elementu listy.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00134">Scena.hh:134</a></div></div>
+<div class="ttc" id="aa00151_html"><div class="ttname"><a href="a00151.html">Wektor</a></div><div class="ttdoc">Szablon Klasy modeluje pojęcie Wektora.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00034">Wektor.hh:34</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_c0e5b474b65f5fb9aacabbe73e8767e4.html">PRACA DNI</a></li><li class="navelem"><a class="el" href="dir_3b030d9d5b9e48e84bcf677dcef751e4.html">Praca 7 czerwca</a></li><li class="navelem"><a class="el" href="dir_07e098effe35686b81f301e257e93fe3.html">DRONIK</a></li><li class="navelem"><a class="el" href="dir_2d88d5a780c219896f96d6acd5521563.html">prj</a></li><li class="navelem"><a class="el" href="dir_90684cf5b24e66c76aacf3334b813e09.html">inc</a></li><li class="navelem"><a class="el" href="a00050.html">Scena.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

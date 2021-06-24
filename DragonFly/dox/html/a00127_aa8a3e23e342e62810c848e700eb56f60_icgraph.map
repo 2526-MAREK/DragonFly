@@ -1,0 +1,12 @@
+<map id="Graniastoslup6::WezKatOrientacji_stopnie" name="Graniastoslup6::WezKatOrientacji_stopnie">
+<area shape="rect" id="node1" title="Pozwala na dostęp do składowej prywatnej klasy: KatOreintacji_stopnie." alt="" coords="1488,74,1703,115"/>
+<area shape="rect" id="node2" href="$a00115.html#a92bf8e5428eed0eabf314908b35ecca7" title="Transformuje cały jeden Rotor." alt="" coords="1293,74,1440,115"/>
+<area shape="rect" id="node3" href="$a00115.html#a93d08cb51d9659816e87e08f21b71a49" title="Ustawia dron w żądanej pozycji." alt="" coords="1099,74,1245,115"/>
+<area shape="rect" id="node4" href="$a00115.html#aaf59ac06e0dd549df191931be35a1f4c" title="Wykonuje Lot Drona." alt="" coords="888,56,1011,83"/>
+<area shape="rect" id="node10" href="$a00115.html#a940d9ee58903d674b8e352cf559b3fa5" title="Wykonuje Zmianę orientacji Drona." alt="" coords="848,107,1051,133"/>
+<area shape="rect" id="node5" href="$a00115.html#a7806d0312e7e58912780d0f016d58c79" title="Ustawia odpowiednie parametry do Lotu Pionowego Drona." alt="" coords="628,5,800,32"/>
+<area shape="rect" id="node9" href="$a00115.html#a97a7d40859f605969542babee3b586c4" title="Ustawia odpowiednie parametry do Lotu Poziomego Drona." alt="" coords="628,56,800,83"/>
+<area shape="rect" id="node6" href="$a00115.html#ae6ea05acecf80e6f8aef995722a9c8f4" title="Animacja LotuDrona." alt="" coords="411,56,580,83"/>
+<area shape="rect" id="node7" href="$a00131.html#a5caea796ccb46f0f36f4191def4407d3" title=" " alt="" coords="196,49,363,90"/>
+<area shape="rect" id="node8" href="$a00131.html#ab2fc7d26649fefef233e2e0971e35146" title=" " alt="" coords="5,49,148,90"/>
+</map>

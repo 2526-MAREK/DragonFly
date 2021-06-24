@@ -1,0 +1,9 @@
+<map id="TworzOpisPrzetranformowanejBryly" name="TworzOpisPrzetranformowanejBryly">
+<area shape="rect" id="node1" title="Transformuje całą bryłę." alt="" coords="739,49,937,90"/>
+<area shape="rect" id="node2" href="$a00020.html#ad7ffc39599d5e1a6c368299ea2cd117b" title="Ustawia dron w żądanej pozycji i orientacji." alt="" coords="288,31,405,57"/>
+<area shape="rect" id="node5" href="$a00020.html#a12a86370f87674ba4f17149e56edad11" title="Tworzy plik z wierzchołkami były modelującej korpus drona." alt="" coords="592,56,691,83"/>
+<area shape="rect" id="node7" href="$a00020.html#aea4569cdfc1dbbf6355f65f3965d70f3" title="Tworzy plik z wierzchołkami były modelującej rotor drona." alt="" coords="597,107,685,133"/>
+<area shape="rect" id="node3" href="$a00020.html#ab70925ff26bfade5e1c98bc29ff75c68" title="Anicja przelotu drona." alt="" coords="104,5,240,32"/>
+<area shape="rect" id="node4" href="$a00020.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node6" href="$a00020.html#aa0b7a7ec4f6146f678004708c2187c50" title="Tworzy pliku pozwalające na wizualizację drona." alt="" coords="453,56,544,83"/>
+</map>

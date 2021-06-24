@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Plik źródłowy /home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Wektor.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00053_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Wektor.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00053.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WEKTOR_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WEKTOR_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;istream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00053.html#aabbc6dfa3cf29c590c418ded7ab28cc5">   10</a></span>&#160;<span class="preprocessor">#define MANIPULATORY_WYSWIETLAJACE std::setw(16) &lt;&lt; std::fixed &lt;&lt; std::setprecision(10) </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54aa70478ce277ffc322f8e1e3418e07355">   25</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54">wspolrzedne</a> {<a class="code" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a58833a3110c570fb05130d40c365d1e4">X</a>, <a class="code" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a5596231eabd6cf29050967d5ac83ad84">Y</a>, <a class="code" href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54aa70478ce277ffc322f8e1e3418e07355">Z</a>}; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00151.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00151.html">Wektor</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">   42</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[Templ_Size]; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00151.html#ac442287396c81d4c43430d6a9d891133">   43</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="a00151.html#ac442287396c81d4c43430d6a9d891133">IloscAktualna</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00151.html#a592651399c83f60ca5a99fa8f90a21b3">   44</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="a00151.html#a592651399c83f60ca5a99fa8f90a21b3">IloscOgolna</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="a00151.html#a779db007189b61f72b68de733344fd2e">Wektor</a>(); </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="a00151.html#a779db007189b61f72b68de733344fd2e">Wektor</a>(<span class="keyword">const</span> std::initializer_list&lt;double&gt; &amp;rListaWsp);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="a00151.html#a779db007189b61f72b68de733344fd2e">Wektor</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor</a> &amp;Wktr);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="a00151.html">Wektor</a>&amp; <a class="code" href="a00151.html#a35cc67383fbd03aafb500a1e8b1b3793">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor</a>&amp; Wktr);</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00151.html#a19cb2973fecadd16b2eff4c8bc786eef">   67</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00151.html#a19cb2973fecadd16b2eff4c8bc786eef">operator [] </a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lnd)<span class="keyword"> const </span>{ assert(lnd &lt; Templ_Size); <span class="keywordflow">return</span> <a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[lnd]; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="a00151.html#a19d4feab86e4e02dbb359843aea178b8">   79</a></span>&#160;  <span class="keywordtype">double</span> &amp;<a class="code" href="a00151.html#a19cb2973fecadd16b2eff4c8bc786eef">operator [] </a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lnd)  { assert(lnd &lt; Templ_Size); <span class="keywordflow">return</span> <a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[lnd]; } </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="a00151.html">Wektor</a> <a class="code" href="a00151.html#a1b3c00f9590f9adc26cc37120e7c42e7">operator+</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor</a> &amp; Wierz) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="a00151.html">Wektor</a> <a class="code" href="a00151.html#af4745e9978f68215a44263251a579ce0">operator-</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor</a> &amp; Wierz) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="a00151.html">Wektor</a> <a class="code" href="a00151.html#a548e4ece393b145ac10c1802593d3f00">operator*</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor</a> &amp; Wierz) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="a00151.html">Wektor</a> <a class="code" href="a00151.html#a548e4ece393b145ac10c1802593d3f00">operator*</a>(<span class="keywordtype">double</span> liczba) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="a00151.html#a7cfba8106eabcbb40904e4a487ce134d">   90</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="a00151.html#a7cfba8106eabcbb40904e4a487ce134d">WezIloscAktualnaWektorow</a>(){ <span class="keywordflow">return</span> <a class="code" href="a00151.html#ac442287396c81d4c43430d6a9d891133">IloscAktualna</a>;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="a00151.html#a2f96c2b05de76bbc3ffadb52b5878410">   91</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="a00151.html#a2f96c2b05de76bbc3ffadb52b5878410">WezIloscOgolnaWektorow</a>(){<span class="keywordflow">return</span> <a class="code" href="a00151.html#a592651399c83f60ca5a99fa8f90a21b3">IloscOgolna</a>;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="a00151.html#ad17c7f381f13dbe34a4b6bc6537f1de5">~Wektor</a>(); </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00151.html">Wektor &lt;Templ_Size&gt;::IloscAktualna</a> =0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00151.html">Wektor &lt;Templ_Size&gt;::IloscOgolna</a> =0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00151.html#a779db007189b61f72b68de733344fd2e">  109</a></span>&#160;<a class="code" href="a00151.html#a779db007189b61f72b68de733344fd2e">Wektor&lt;Templ_Size&gt;::Wektor</a>()</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  ++IloscAktualna;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  ++IloscOgolna;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">double</span>&amp; Wspolrzedne: Wsp)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    Wspolrzedne = 0;  <span class="comment">//Inicjalizacja całej tablicy zerami </span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="a00151.html#a004b467475b40a9ec9ed7dcbb6f9e541">  132</a></span>&#160;<a class="code" href="a00151.html#a779db007189b61f72b68de733344fd2e">Wektor&lt;Templ_Size&gt;::Wektor</a>(<span class="keyword">const</span> std::initializer_list&lt;double&gt; &amp;rListaWsp) : <a class="code" href="a00151.html">Wektor</a>() </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  assert(rListaWsp.size() &lt;= Templ_Size);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">int</span> Ind = -1;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">double</span> Wsp_i : rListaWsp)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[++Ind] = Wsp_i;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">/*Konstruktor kopiujący szablonu  klasy Wektor*/</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="a00151.html#ade555cd5202004029aaa8c47c3f93361">  142</a></span>&#160;<a class="code" href="a00151.html#a779db007189b61f72b68de733344fd2e">Wektor&lt;Templ_Size&gt;::Wektor</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp;Wktr)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  ++IloscAktualna;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  ++IloscOgolna;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind = 0; Ind&lt;Templ_Size; ++Ind){</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    Wsp[Ind] = Wktr[Ind];</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">/*Przeciążenie operatora przypisania*/</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="a00151.html#a35cc67383fbd03aafb500a1e8b1b3793">  153</a></span>&#160;<a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp; <a class="code" href="a00151.html#a35cc67383fbd03aafb500a1e8b1b3793">Wektor&lt;Templ_Size&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp;Wktr)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">if</span>(<span class="keyword">this</span> == &amp;Wktr)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind = 0; Ind&lt;Templ_Size; ++Ind){</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    Wsp[Ind] = Wktr[Ind];</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;   <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="a00053.html#a9bad13150adb3b88cad5c2c966da636c">  184</a></span>&#160;std::ostream &amp;<a class="code" href="a00053.html#a9bad13150adb3b88cad5c2c966da636c">operator&lt;&lt;</a>(std::ostream &amp;StrmWy, <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp;Wktr)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;{</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;Templ_Size;++i)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    StrmWy &lt;&lt; Wktr[i]&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  StrmWy&lt;&lt;std::endl;  </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordflow">return</span> StrmWy;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="a00151.html#af4745e9978f68215a44263251a579ce0">  212</a></span>&#160;<a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> <a class="code" href="a00151.html#af4745e9978f68215a44263251a579ce0">Wektor&lt;Templ_Size&gt;::operator-</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp; Wierz)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> Wktr;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <span class="keywordtype">unsigned</span> i=0;i&lt;Templ_Size;++i)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    Wktr.<a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[i] = Wsp[i]-Wierz[i];</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordflow">return</span> Wktr;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="a00151.html#a1b3c00f9590f9adc26cc37120e7c42e7">  241</a></span>&#160;<a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> <a class="code" href="a00151.html#a1b3c00f9590f9adc26cc37120e7c42e7">Wektor&lt;Templ_Size&gt;::operator+</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp; Wierz)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> Wktr;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <span class="keywordtype">unsigned</span> i=0;i&lt;Templ_Size;++i)</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    Wktr.<a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[i] = Wsp[i]+Wierz[i];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordflow">return</span> Wktr;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="a00151.html#a548e4ece393b145ac10c1802593d3f00">  250</a></span>&#160;<a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> <a class="code" href="a00151.html#a548e4ece393b145ac10c1802593d3f00">Wektor&lt;Templ_Size&gt;::operator*</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp; Wierz)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> Wktr;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <span class="keywordtype">unsigned</span> i=0;i&lt;Templ_Size;++i)</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    Wktr.<a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[i] = Wsp[i]*Wierz[i];</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">return</span> Wktr;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="a00151.html#a0b435288b6462d18df177be21da34946">  259</a></span>&#160;<a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> <a class="code" href="a00151.html#a548e4ece393b145ac10c1802593d3f00">Wektor&lt;Templ_Size&gt;::operator*</a>(<span class="keywordtype">double</span> liczba)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> Wktr;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <span class="keywordtype">unsigned</span> i=0;i&lt;Templ_Size;++i){</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    Wktr.<a class="code" href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wsp</a>[i] = Wsp[i]*liczba;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">return</span> Wktr;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">/*template &lt;unsigned int Templ_Size&gt;</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">bool Wektor&lt;Templ_Size&gt;::operator&gt;(const Wektor&lt;Templ_Size&gt; &amp; Wktr) const</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">  int TabPom[Templ_Size];</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">  for(int unsigned i=0;i&lt;Templ_Size;++i){</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">    if(Wsp[i]&gt;Wktr[i]) </span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">      TabPom[i]= 1;</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">    else</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">      TabPom[i] = 0;  </span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">return false;  </span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">template &lt;unsigned int Templ_Size&gt;</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">bool Wektor&lt;Templ_Size&gt;::operator&lt;(const Wektor&lt;Templ_Size&gt; &amp; Wktr) const</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">  for(int unsigned i=0;i&lt;Templ_Size;++i){</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">    if(Wsp[i]&lt;Wktr[i]) return true;</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">return false;  </span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">}*/</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="a00053.html#a93091e5ad8344090bbdf68c898dae41a">  308</a></span>&#160;std::istream&amp; <a class="code" href="a00053.html#a93091e5ad8344090bbdf68c898dae41a">operator&gt;&gt;</a>(std::istream &amp;StrmWe, <a class="code" href="a00151.html">Wektor&lt;Templ_Size&gt;</a> &amp;Wktr)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <span class="keywordtype">unsigned</span> i=0;i&lt;Templ_Size;++i)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    StrmWe&gt;&gt;Wktr[i];</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordflow">return</span> StrmWe;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Templ_Size&gt;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="a00151.html#ad17c7f381f13dbe34a4b6bc6537f1de5">  319</a></span>&#160;<a class="code" href="a00151.html#ad17c7f381f13dbe34a4b6bc6537f1de5">Wektor&lt;Templ_Size&gt;::~Wektor</a>(){ --IloscAktualna;}</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00151_html_ad17c7f381f13dbe34a4b6bc6537f1de5"><div class="ttname"><a href="a00151.html#ad17c7f381f13dbe34a4b6bc6537f1de5">Wektor::~Wektor</a></div><div class="ttdeci">~Wektor()</div><div class="ttdoc">Destruktor Szablonu klasy Wektor.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00319">Wektor.hh:319</a></div></div>
+<div class="ttc" id="aa00053_html_a5a0dd761a0ae645ec0636cf638280b54"><div class="ttname"><a href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54">wspolrzedne</a></div><div class="ttdeci">wspolrzedne</div><div class="ttdoc">Typ wyliczeniowy dla współrzedych wektora x, y , Z.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00025">Wektor.hh:25</a></div></div>
+<div class="ttc" id="aa00053_html_a93091e5ad8344090bbdf68c898dae41a"><div class="ttname"><a href="a00053.html#a93091e5ad8344090bbdf68c898dae41a">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;StrmWe, Wektor&lt; Templ_Size &gt; &amp;Wktr)</div><div class="ttdoc">Przeciążenie operatora '&gt;&gt;' dla szablony klasy Wektor pozwalające zapisywać dane do składowych szablo...</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00308">Wektor.hh:308</a></div></div>
+<div class="ttc" id="aa00053_html_a5a0dd761a0ae645ec0636cf638280b54a5596231eabd6cf29050967d5ac83ad84"><div class="ttname"><a href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a5596231eabd6cf29050967d5ac83ad84">Y</a></div><div class="ttdeci">@ Y</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00025">Wektor.hh:25</a></div></div>
+<div class="ttc" id="aa00053_html_a5a0dd761a0ae645ec0636cf638280b54aa70478ce277ffc322f8e1e3418e07355"><div class="ttname"><a href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54aa70478ce277ffc322f8e1e3418e07355">Z</a></div><div class="ttdeci">@ Z</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00025">Wektor.hh:25</a></div></div>
+<div class="ttc" id="aa00151_html_af4745e9978f68215a44263251a579ce0"><div class="ttname"><a href="a00151.html#af4745e9978f68215a44263251a579ce0">Wektor::operator-</a></div><div class="ttdeci">Wektor operator-(const Wektor &amp;Wierz) const</div><div class="ttdoc">Odejmuje dwa Wektory.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00212">Wektor.hh:212</a></div></div>
+<div class="ttc" id="aa00151_html_a592651399c83f60ca5a99fa8f90a21b3"><div class="ttname"><a href="a00151.html#a592651399c83f60ca5a99fa8f90a21b3">Wektor::IloscOgolna</a></div><div class="ttdeci">static int IloscOgolna</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00044">Wektor.hh:44</a></div></div>
+<div class="ttc" id="aa00151_html_a548e4ece393b145ac10c1802593d3f00"><div class="ttname"><a href="a00151.html#a548e4ece393b145ac10c1802593d3f00">Wektor::operator*</a></div><div class="ttdeci">Wektor operator*(const Wektor &amp;Wierz) const</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00250">Wektor.hh:250</a></div></div>
+<div class="ttc" id="aa00151_html_a1b3c00f9590f9adc26cc37120e7c42e7"><div class="ttname"><a href="a00151.html#a1b3c00f9590f9adc26cc37120e7c42e7">Wektor::operator+</a></div><div class="ttdeci">Wektor operator+(const Wektor &amp;Wierz) const</div><div class="ttdoc">Dodaje dwa Wektory.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00241">Wektor.hh:241</a></div></div>
+<div class="ttc" id="aa00151_html_a19cb2973fecadd16b2eff4c8bc786eef"><div class="ttname"><a href="a00151.html#a19cb2973fecadd16b2eff4c8bc786eef">Wektor::operator[]</a></div><div class="ttdeci">double operator[](unsigned int lnd) const</div><div class="ttdoc">Pozwala na dostęp do składowej prywatnej szablonu (Tablicy jednowymiarowej) za pomocą operatora przec...</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00067">Wektor.hh:67</a></div></div>
+<div class="ttc" id="aa00053_html_a9bad13150adb3b88cad5c2c966da636c"><div class="ttname"><a href="a00053.html#a9bad13150adb3b88cad5c2c966da636c">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;StrmWy, const Wektor&lt; Templ_Size &gt; &amp;Wktr)</div><div class="ttdoc">Przeciąża operator '&lt;&lt;' dla szablonu klasy Wektor i pozwala wyświetlić jego składowe.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00184">Wektor.hh:184</a></div></div>
+<div class="ttc" id="aa00151_html_ac442287396c81d4c43430d6a9d891133"><div class="ttname"><a href="a00151.html#ac442287396c81d4c43430d6a9d891133">Wektor::IloscAktualna</a></div><div class="ttdeci">static int IloscAktualna</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00043">Wektor.hh:43</a></div></div>
+<div class="ttc" id="aa00151_html_a779db007189b61f72b68de733344fd2e"><div class="ttname"><a href="a00151.html#a779db007189b61f72b68de733344fd2e">Wektor::Wektor</a></div><div class="ttdeci">Wektor()</div><div class="ttdoc">Konstruktor Domyślny szablonu klasy Wektor.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00109">Wektor.hh:109</a></div></div>
+<div class="ttc" id="aa00053_html_a5a0dd761a0ae645ec0636cf638280b54a58833a3110c570fb05130d40c365d1e4"><div class="ttname"><a href="a00053.html#a5a0dd761a0ae645ec0636cf638280b54a58833a3110c570fb05130d40c365d1e4">X</a></div><div class="ttdeci">@ X</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00025">Wektor.hh:25</a></div></div>
+<div class="ttc" id="aa00151_html_a7cfba8106eabcbb40904e4a487ce134d"><div class="ttname"><a href="a00151.html#a7cfba8106eabcbb40904e4a487ce134d">Wektor::WezIloscAktualnaWektorow</a></div><div class="ttdeci">static int WezIloscAktualnaWektorow()</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00090">Wektor.hh:90</a></div></div>
+<div class="ttc" id="aa00151_html_a2f96c2b05de76bbc3ffadb52b5878410"><div class="ttname"><a href="a00151.html#a2f96c2b05de76bbc3ffadb52b5878410">Wektor::WezIloscOgolnaWektorow</a></div><div class="ttdeci">static int WezIloscOgolnaWektorow()</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00091">Wektor.hh:91</a></div></div>
+<div class="ttc" id="aa00151_html_a46cc4da4e390083038b420d8b78e9b98"><div class="ttname"><a href="a00151.html#a46cc4da4e390083038b420d8b78e9b98">Wektor::Wsp</a></div><div class="ttdeci">double Wsp[Templ_Size]</div><div class="ttdoc">Tablica statyczna zawierająca współrzedne wektora.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00042">Wektor.hh:42</a></div></div>
+<div class="ttc" id="aa00151_html"><div class="ttname"><a href="a00151.html">Wektor</a></div><div class="ttdoc">Szablon Klasy modeluje pojęcie Wektora.</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00034">Wektor.hh:34</a></div></div>
+<div class="ttc" id="aa00151_html_a35cc67383fbd03aafb500a1e8b1b3793"><div class="ttname"><a href="a00151.html#a35cc67383fbd03aafb500a1e8b1b3793">Wektor::operator=</a></div><div class="ttdeci">Wektor &amp; operator=(const Wektor &amp;Wktr)</div><div class="ttdef"><b>Definition:</b> <a href="a00053_source.html#l00153">Wektor.hh:153</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_c0e5b474b65f5fb9aacabbe73e8767e4.html">PRACA DNI</a></li><li class="navelem"><a class="el" href="dir_3b030d9d5b9e48e84bcf677dcef751e4.html">Praca 7 czerwca</a></li><li class="navelem"><a class="el" href="dir_07e098effe35686b81f301e257e93fe3.html">DRONIK</a></li><li class="navelem"><a class="el" href="dir_2d88d5a780c219896f96d6acd5521563.html">prj</a></li><li class="navelem"><a class="el" href="dir_90684cf5b24e66c76aacf3334b813e09.html">inc</a></li><li class="navelem"><a class="el" href="a00053.html">Wektor.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

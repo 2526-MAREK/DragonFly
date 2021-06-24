@@ -1,0 +1,10 @@
+<map id="GoraZOstrymSzczytem::Tworz" name="GoraZOstrymSzczytem::Tworz">
+<area shape="rect" id="node1" title="Tworzy bryłę reprezentującą Górę z Ostrym Szczytem." alt="" coords="5,158,161,199"/>
+<area shape="rect" id="node2" href="$a00017.html#a5ce69bc05bae299a686a7cf2f4419bf6" title="Funkcja pomocniczna, sprawdzająca czy udało się wczytac dane." alt="" coords="233,5,398,32"/>
+<area shape="rect" id="node3" href="$a00017.html#a68f34048ab8ebf478f57fd99556e1463" title="Funkcja pomocniczna, sprawdzająca czy udało się zapisac dane." alt="" coords="234,56,397,83"/>
+<area shape="rect" id="node4" href="$a00017.html#a1090bc63d4d23df1314588c576782181" title="Funkcja pomocniczna, sprawdzająca poprawność otwartego pliku wejściowego." alt="" coords="262,107,369,133"/>
+<area shape="rect" id="node5" href="$a00111.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Odpowiednio skladuje zadany Wierzchołek." alt="" coords="245,158,385,199"/>
+<area shape="rect" id="node6" href="$a00123.html#ad91ab02a82d8d38f3ab9999c16b70b4b" title="Tansformuje Polozenie o zadany Wektor." alt="" coords="232,223,399,265"/>
+<area shape="rect" id="node7" href="$a00111.html#a6a50b95a5133b9e03888441843f7e2ba" title="Pozwala na dostęp do NazwyPlikuBrylyFinalnej." alt="" coords="218,289,413,330"/>
+<area shape="rect" id="node8" href="$a00111.html#a5a877f887d4a32adf29c319dcac2334e" title="Pozwala na dostęp do NazwyPlikuBrylyWzorcowej." alt="" coords="209,354,421,395"/>
+</map>

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Plik źródłowy /home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Prostopadloscian.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00047_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Prostopadloscian.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00047.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PROSTOKAT_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PROSTOKAT_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00017.html">BrylaGeometryczna.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00143.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00143.html">Prostopadloscian</a> : <span class="keyword">public</span> <a class="code" href="a00111.html">BrylaGeometryczna</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00143.html#a471ed32adabd1b3e2fdc1fa8f6e78110">   38</a></span>&#160;  <a class="code" href="a00151.html">Wektor3D</a> <a class="code" href="a00143.html#a471ed32adabd1b3e2fdc1fa8f6e78110">Polozenie</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00143.html#ac0a9b64aebd2c8d340c0075ea68b92fd">   45</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00143.html#ac0a9b64aebd2c8d340c0075ea68b92fd">KatOrientacji_stopnie</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="comment">// Prostopadloscian();</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span><a class="code" href="a00143.html#aa45a20c313c5ba0f8ab04fe4ebcd9795">Prostopadloscian</a>(<span class="keyword">const</span> std::string &amp; s1 = <span class="stringliteral">&quot;brak&quot;</span>, <span class="keyword">const</span> std::string &amp; s2 = <span class="stringliteral">&quot;brak&quot;</span>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a> &amp; SkalaBrylaTym ={0,0,0}, <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a> &amp; PolozeniePrTym = {0,0,0}, <span class="keywordtype">double</span> KatPocz = 0.0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="a00143.html#a3690c3912fd27bf464579b4e3b2c9078">   59</a></span>&#160;<a class="code" href="a00151.html">Wektor3D</a> <a class="code" href="a00143.html#a3690c3912fd27bf464579b4e3b2c9078">WezPolozenie</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="a00143.html#a471ed32adabd1b3e2fdc1fa8f6e78110">Polozenie</a>;} </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00143.html#a7c99c7ac80563691937acbb8bc28e120">   63</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="a00143.html#a7c99c7ac80563691937acbb8bc28e120">WezKatOrientacji_stopnie</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="a00143.html#ac0a9b64aebd2c8d340c0075ea68b92fd">KatOrientacji_stopnie</a>;}   </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="a00143.html#a8b7f4a93fd3923e18d20bf1a0296c89a">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00143.html#a8b7f4a93fd3923e18d20bf1a0296c89a">DodajStopienOrientacjiKorpusu</a>(<span class="keywordtype">double</span> KatOrientacjiKorpusu_stopnie) {<a class="code" href="a00143.html#ac0a9b64aebd2c8d340c0075ea68b92fd">KatOrientacji_stopnie</a> = KatOrientacjiKorpusu_stopnie;}                          </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="a00151.html">Wektor3D</a> <a class="code" href="a00143.html#a840ce6903a4ea10b2ed92bf7bae6dfb3">TransfDoUklWspRodzica</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Wierz) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00143.html#a88077e2a4613d621eabc2306db53c67f">   75</a></span>&#160;  <a class="code" href="a00143.html#a88077e2a4613d621eabc2306db53c67f">~Prostopadloscian</a>() {}; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00143_html_aa45a20c313c5ba0f8ab04fe4ebcd9795"><div class="ttname"><a href="a00143.html#aa45a20c313c5ba0f8ab04fe4ebcd9795">Prostopadloscian::Prostopadloscian</a></div><div class="ttdeci">Prostopadloscian(const std::string &amp;s1=&quot;brak&quot;, const std::string &amp;s2=&quot;brak&quot;, const Wektor3D &amp;SkalaBrylaTym={0, 0, 0}, const Wektor3D &amp;PolozeniePrTym={0, 0, 0}, double KatPocz=0.0)</div><div class="ttdoc">Konstruktor Domyślny klasy Prostopadloscian.</div><div class="ttdef"><b>Definition:</b> <a href="a00092_source.html#l00020">Prostopadloscian.cpp:20</a></div></div>
+<div class="ttc" id="aa00143_html_a8b7f4a93fd3923e18d20bf1a0296c89a"><div class="ttname"><a href="a00143.html#a8b7f4a93fd3923e18d20bf1a0296c89a">Prostopadloscian::DodajStopienOrientacjiKorpusu</a></div><div class="ttdeci">void DodajStopienOrientacjiKorpusu(double KatOrientacjiKorpusu_stopnie)</div><div class="ttdoc">Pozwala dodać nowy kat orientacji prostopadloscianu.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00067">Prostopadloscian.hh:67</a></div></div>
+<div class="ttc" id="aa00017_html"><div class="ttname"><a href="a00017.html">BrylaGeometryczna.hh</a></div><div class="ttdoc">Definicja klasy BrylaGeometryczna.</div></div>
+<div class="ttc" id="aa00111_html"><div class="ttname"><a href="a00111.html">BrylaGeometryczna</a></div><div class="ttdoc">Klasa modeluje pojęcie BrylyGeometrycznej.</div><div class="ttdef"><b>Definition:</b> <a href="a00017_source.html#l00025">BrylaGeometryczna.hh:25</a></div></div>
+<div class="ttc" id="aa00143_html_a471ed32adabd1b3e2fdc1fa8f6e78110"><div class="ttname"><a href="a00143.html#a471ed32adabd1b3e2fdc1fa8f6e78110">Prostopadloscian::Polozenie</a></div><div class="ttdeci">Wektor3D Polozenie</div><div class="ttdoc">Określa położenie prostopadłościanu.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00038">Prostopadloscian.hh:38</a></div></div>
+<div class="ttc" id="aa00143_html_a88077e2a4613d621eabc2306db53c67f"><div class="ttname"><a href="a00143.html#a88077e2a4613d621eabc2306db53c67f">Prostopadloscian::~Prostopadloscian</a></div><div class="ttdeci">~Prostopadloscian()</div><div class="ttdoc">Destruktor klasy Prostopadloscian.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00075">Prostopadloscian.hh:75</a></div></div>
+<div class="ttc" id="aa00143_html_a7c99c7ac80563691937acbb8bc28e120"><div class="ttname"><a href="a00143.html#a7c99c7ac80563691937acbb8bc28e120">Prostopadloscian::WezKatOrientacji_stopnie</a></div><div class="ttdeci">double WezKatOrientacji_stopnie() const</div><div class="ttdoc">Pozwala na dostęp do składowej prywatnej: KatOrientacji_stopnie.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00063">Prostopadloscian.hh:63</a></div></div>
+<div class="ttc" id="aa00143_html_a3690c3912fd27bf464579b4e3b2c9078"><div class="ttname"><a href="a00143.html#a3690c3912fd27bf464579b4e3b2c9078">Prostopadloscian::WezPolozenie</a></div><div class="ttdeci">Wektor3D WezPolozenie() const</div><div class="ttdoc">Pozwala na dostęp do składowej prywatnej: Polozenie.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00059">Prostopadloscian.hh:59</a></div></div>
+<div class="ttc" id="aa00143_html"><div class="ttname"><a href="a00143.html">Prostopadloscian</a></div><div class="ttdoc">Klasa modeluje pojęcie Prostopadłościanu w 3 wymiarach.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00029">Prostopadloscian.hh:29</a></div></div>
+<div class="ttc" id="aa00143_html_ac0a9b64aebd2c8d340c0075ea68b92fd"><div class="ttname"><a href="a00143.html#ac0a9b64aebd2c8d340c0075ea68b92fd">Prostopadloscian::KatOrientacji_stopnie</a></div><div class="ttdeci">double KatOrientacji_stopnie</div><div class="ttdoc">Określa kąt Orientacji położenia prostopadłościanu.</div><div class="ttdef"><b>Definition:</b> <a href="a00047_source.html#l00045">Prostopadloscian.hh:45</a></div></div>
+<div class="ttc" id="aa00151_html"><div class="ttname"><a href="a00151.html">Wektor&lt; 3 &gt;</a></div></div>
+<div class="ttc" id="aa00143_html_a840ce6903a4ea10b2ed92bf7bae6dfb3"><div class="ttname"><a href="a00143.html#a840ce6903a4ea10b2ed92bf7bae6dfb3">Prostopadloscian::TransfDoUklWspRodzica</a></div><div class="ttdeci">Wektor3D TransfDoUklWspRodzica(const Wektor3D &amp;Wierz) const</div><div class="ttdoc">Realizuje przejście od współrzednych z układu lokalnego bryły do układu lokalnego drona.</div><div class="ttdef"><b>Definition:</b> <a href="a00092_source.html#l00034">Prostopadloscian.cpp:34</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_c0e5b474b65f5fb9aacabbe73e8767e4.html">PRACA DNI</a></li><li class="navelem"><a class="el" href="dir_3b030d9d5b9e48e84bcf677dcef751e4.html">Praca 7 czerwca</a></li><li class="navelem"><a class="el" href="dir_07e098effe35686b81f301e257e93fe3.html">DRONIK</a></li><li class="navelem"><a class="el" href="dir_2d88d5a780c219896f96d6acd5521563.html">prj</a></li><li class="navelem"><a class="el" href="dir_90684cf5b24e66c76aacf3334b813e09.html">inc</a></li><li class="navelem"><a class="el" href="a00047.html">Prostopadloscian.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

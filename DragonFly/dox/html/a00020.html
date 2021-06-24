@@ -1,0 +1,724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Dokumentacja pliku /home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Dron.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00020.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Dron.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definicja klasy <a class="el" href="a00115.html" title="Klasa modeluje pojęcie Drona w 3 wymiarach.">Dron</a>.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;memory.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00035_source.html">Macierz.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00041_source.html">Macierz3x3.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00056_source.html">Wektor2D.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00047_source.html">Prostopadloscian.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00029_source.html">Graniastoslup6.hh</a>&quot;</code><br />
+<code>#include &quot;lacze_do_gnuplota.hh&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Dron.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00021.png" border="0" usemap="#_2home_2marek_2_pulpit_2_p_r_a_c_a_01_d_n_i_2_praca_017_01czerwca_2_d_r_o_n_i_k_2prj_2inc_2_dron_8hh" alt=""/></div>
+<map name="_2home_2marek_2_pulpit_2_p_r_a_c_a_01_d_n_i_2_praca_017_01czerwca_2_d_r_o_n_i_k_2prj_2inc_2_dron_8hh" id="_2home_2marek_2_pulpit_2_p_r_a_c_a_01_d_n_i_2_praca_017_01czerwca_2_d_r_o_n_i_k_2prj_2inc_2_dron_8hh">
+<area shape="rect" title="Definicja klasy Dron." alt="" coords="695,5,891,61"/>
+<area shape="rect" title=" " alt="" coords="96,408,168,435"/>
+<area shape="rect" title=" " alt="" coords="756,184,815,211"/>
+<area shape="rect" title=" " alt="" coords="856,109,923,136"/>
+<area shape="rect" title=" " alt="" coords="947,109,1026,136"/>
+<area shape="rect" href="a00035.html" title="Definicja szablonu i metod klasy Macierz." alt="" coords="194,184,278,211"/>
+<area shape="rect" href="a00041.html" title="Plik defnicje klasy Macierz3x3 &#45; instancji szablonu klasy Macierz." alt="" coords="184,109,288,136"/>
+<area shape="rect" href="a00056.html" title="Plik zawiera defnicje klasy Wektor2D &#45; instancji szablonu klasy Wektor&lt;&gt;" alt="" coords="635,259,731,285"/>
+<area shape="rect" href="a00047.html" title="Definicja klasy Prostopadloscian." alt="" coords="560,109,699,136"/>
+<area shape="rect" href="a00029.html" title="Definicja klasy Graniastoslup6." alt="" coords="381,109,507,136"/>
+<area shape="rect" title=" " alt="" coords="1051,109,1197,136"/>
+<area shape="rect" title=" " alt="" coords="1222,109,1277,136"/>
+<area shape="rect" title=" " alt="" coords="1301,109,1339,136"/>
+<area shape="rect" title=" " alt="" coords="245,259,307,285"/>
+<area shape="rect" href="a00053.html" title="Definicja szablonu i metod klasy Wektor." alt="" coords="428,333,508,360"/>
+<area shape="rect" href="a00059.html" title="Plik zawiera defnicje klasy Wektor3D &#45; instancji szablonu klasy Wektor&lt;&gt;" alt="" coords="381,259,477,285"/>
+<area shape="rect" title=" " alt="" coords="656,408,723,435"/>
+<area shape="rect" title=" " alt="" coords="525,408,592,435"/>
+<area shape="rect" title=" " alt="" coords="346,408,411,435"/>
+<area shape="rect" title=" " alt="" coords="435,408,501,435"/>
+<area shape="rect" title=" " alt="" coords="529,184,583,211"/>
+<area shape="rect" title=" " alt="" coords="607,184,681,211"/>
+<area shape="rect" href="a00017.html" title="Definicja klasy BrylaGeometryczna." alt="" coords="354,184,505,211"/>
+<area shape="rect" title=" " alt="" coords="501,259,560,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00022.png" border="0" usemap="#_2home_2marek_2_pulpit_2_p_r_a_c_a_01_d_n_i_2_praca_017_01czerwca_2_d_r_o_n_i_k_2prj_2inc_2_dron_8hhdep" alt=""/></div>
+<map name="_2home_2marek_2_pulpit_2_p_r_a_c_a_01_d_n_i_2_praca_017_01czerwca_2_d_r_o_n_i_k_2prj_2inc_2_dron_8hhdep" id="_2home_2marek_2_pulpit_2_p_r_a_c_a_01_d_n_i_2_praca_017_01czerwca_2_d_r_o_n_i_k_2prj_2inc_2_dron_8hhdep">
+<area shape="rect" title="Definicja klasy Dron." alt="" coords="329,5,525,61"/>
+<area shape="rect" href="a00050.html" title="Definicja klasy Scena." alt="" coords="247,109,443,165"/>
+<area shape="rect" href="a00065.html" title="Definicje metod klasy Dron." alt="" coords="539,317,735,373"/>
+<area shape="rect" href="a00032.html" title="Definicja klasy InterfejstUzytkownika." alt="" coords="341,213,599,269"/>
+<area shape="rect" href="a00086.html" title="Funkcja main." alt="" coords="5,317,201,373"/>
+<area shape="rect" href="a00095.html" title="Definicje metod klasy Prostopadloscian." alt="" coords="120,213,316,269"/>
+<area shape="rect" href="a00077.html" title="Definicje metod klasy InterfejsUzytkownika." alt="" coords="247,317,514,373"/>
+</map>
+</div>
+</div>
+<p><a href="a00020_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00115.html">Dron</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa modeluje pojęcie Drona w 3 wymiarach.  <a href="a00115.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a9f5ca209b61eae19f489e3af0ab5637d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a9f5ca209b61eae19f489e3af0ab5637d">ILOSC_ROTOROW</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a9f5ca209b61eae19f489e3af0ab5637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d104782d6322f7698c1486b6e00d6c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a7d104782d6322f7698c1486b6e00d6c1">ILOSC_WIERZ_LINII_TWORZACEJ</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a7d104782d6322f7698c1486b6e00d6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb24cb0ce84e3b9f5e69c5b1ab635fa8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#afb24cb0ce84e3b9f5e69c5b1ab635fa8">SKALA_ROTORA</a>&#160;&#160;&#160;8,8,2</td></tr>
+<tr class="separator:afb24cb0ce84e3b9f5e69c5b1ab635fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea48e83258234ce95a24fd1293dd263b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aea48e83258234ce95a24fd1293dd263b">SKALA_KORPUSU</a>&#160;&#160;&#160;10,8,4</td></tr>
+<tr class="separator:aea48e83258234ce95a24fd1293dd263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d785760df7d38b8c4fe1d84f4d978d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ab9d785760df7d38b8c4fe1d84f4d978d">PLIK_WZORCOWEGO_SZESCIANU</a>&#160;&#160;&#160;&quot;bryly_wzorcowe/szescian.dat&quot;</td></tr>
+<tr class="separator:ab9d785760df7d38b8c4fe1d84f4d978d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10437a5f7133af7fe8703e7e350105e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac10437a5f7133af7fe8703e7e350105e">PLIK_WZORCOWEGO_GRANIASTOSLUPA6</a>&#160;&#160;&#160;&quot;bryly_wzorcowe/graniastoslup6.dat&quot;</td></tr>
+<tr class="separator:ac10437a5f7133af7fe8703e7e350105e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab954ab5c53b1cd693c5bb1d24b25db4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ab954ab5c53b1cd693c5bb1d24b25db4a">PLIK_KORPUSU_DRONA1</a>&#160;&#160;&#160;&quot;dat/korpus_drana1.dat&quot;</td></tr>
+<tr class="separator:ab954ab5c53b1cd693c5bb1d24b25db4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346a5da43df2b2a2038e95c893ccb129"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a346a5da43df2b2a2038e95c893ccb129">PLIK_TRASY_PRZELOTU</a>&#160;&#160;&#160;&quot;dat/trasa_przelotu.dat&quot;</td></tr>
+<tr class="separator:a346a5da43df2b2a2038e95c893ccb129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3c7e6d1a9951c3283dd637275d64e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a6e3c7e6d1a9951c3283dd637275d64e6">PLIK_WLASCIWY__DRON1_KORPUS</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Korpus.dat&quot;</td></tr>
+<tr class="separator:a6e3c7e6d1a9951c3283dd637275d64e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006a9471b4119eb1bec2a292c4315acd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a006a9471b4119eb1bec2a292c4315acd">PLIK_WLASCIWY__DRON1_ROTOR1</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor1.dat&quot;</td></tr>
+<tr class="separator:a006a9471b4119eb1bec2a292c4315acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12a91e7d228562853617e2c0ea678d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac12a91e7d228562853617e2c0ea678d1">PLIK_WLASCIWY__DRON1_ROTOR2</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor2.dat&quot;</td></tr>
+<tr class="separator:ac12a91e7d228562853617e2c0ea678d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103096588ce806b970bbc303169c3fde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a103096588ce806b970bbc303169c3fde">PLIK_WLASCIWY__DRON1_ROTOR3</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor3.dat&quot;</td></tr>
+<tr class="separator:a103096588ce806b970bbc303169c3fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ffdad9e2ea0df67866274330a10950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a89ffdad9e2ea0df67866274330a10950">PLIK_WLASCIWY__DRON1_ROTOR4</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor4.dat&quot;</td></tr>
+<tr class="separator:a89ffdad9e2ea0df67866274330a10950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1749db85ab4dbc2e3e1a2d1043e485d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a1749db85ab4dbc2e3e1a2d1043e485d4">PLIK_WLASCIWY__DRON2_KORPUS</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Korpus.dat&quot;</td></tr>
+<tr class="separator:a1749db85ab4dbc2e3e1a2d1043e485d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2789441753973ed69ce77974996448ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a2789441753973ed69ce77974996448ea">PLIK_WLASCIWY__DRON2_ROTOR1</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor1.dat&quot;</td></tr>
+<tr class="separator:a2789441753973ed69ce77974996448ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada702919d023df75659eb3dd12475e29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ada702919d023df75659eb3dd12475e29">PLIK_WLASCIWY__DRON2_ROTOR2</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor2.dat&quot;</td></tr>
+<tr class="separator:ada702919d023df75659eb3dd12475e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa470c314a09603afc6f998dc6b90723"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#afa470c314a09603afc6f998dc6b90723">PLIK_WLASCIWY__DRON2_ROTOR3</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor3.dat&quot;</td></tr>
+<tr class="separator:afa470c314a09603afc6f998dc6b90723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951e695fd984f50d2a2429ffe8d17b50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a951e695fd984f50d2a2429ffe8d17b50">PLIK_WLASCIWY__DRON2_ROTOR4</a>&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor4.dat&quot;</td></tr>
+<tr class="separator:a951e695fd984f50d2a2429ffe8d17b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c18c9030c4c4a26fd749de8ca3b8e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a00c18c9030c4c4a26fd749de8ca3b8e0">TRANSLACJA_ROTOR_LEWY_PRZEDNI</a>&#160;&#160;&#160;5,4,5</td></tr>
+<tr class="separator:a00c18c9030c4c4a26fd749de8ca3b8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f39d9d8f51d469931ed86146b5ea17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a18f39d9d8f51d469931ed86146b5ea17">TRANSLACJA_ROTOR_PRAWY_PRZEDNI</a>&#160;&#160;&#160;5,-4,5</td></tr>
+<tr class="separator:a18f39d9d8f51d469931ed86146b5ea17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24db7f4c6844e8670930a74990156a79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a24db7f4c6844e8670930a74990156a79">TRANSLACJA_ROTOR_LEWY_TYLNY</a>&#160;&#160;&#160;-5,4,5</td></tr>
+<tr class="separator:a24db7f4c6844e8670930a74990156a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418e493572aed9390c03fc34fcbffabf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a418e493572aed9390c03fc34fcbffabf">TRANSLACJA_ROTOR_PRAWY_TYLNY</a>&#160;&#160;&#160;-5,-4,5</td></tr>
+<tr class="separator:a418e493572aed9390c03fc34fcbffabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567b5efa300c308fcd7e8d89ccec7673"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a567b5efa300c308fcd7e8d89ccec7673">SKOK_OBROTU_ROTOROW_stopnie</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a567b5efa300c308fcd7e8d89ccec7673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567b5efa300c308fcd7e8d89ccec7673"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a567b5efa300c308fcd7e8d89ccec7673">SKOK_OBROTU_ROTOROW_stopnie</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a567b5efa300c308fcd7e8d89ccec7673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a97031d4881e90628053bee63cc340600"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a97031d4881e90628053bee63cc340600">ObrocWzgledemOsiOZ</a> (double KatObrotu_st, <a class="el" href="a00059.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;Wktr3D)</td></tr>
+<tr class="memdesc:a97031d4881e90628053bee63cc340600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja pomocnicza - Dokonuje obrotu wokół osi OZ.  <a href="a00020.html#a97031d4881e90628053bee63cc340600">Więcej...</a><br /></td></tr>
+<tr class="separator:a97031d4881e90628053bee63cc340600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21c27789427909fa38a6539302b03ca"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aa21c27789427909fa38a6539302b03ca">StopnieNaRadiany</a> (double Kat_st)</td></tr>
+<tr class="memdesc:aa21c27789427909fa38a6539302b03ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja pomocnicza - Przelicza wartość kąta ze stopni na radiany.  <a href="a00020.html#aa21c27789427909fa38a6539302b03ca">Więcej...</a><br /></td></tr>
+<tr class="separator:aa21c27789427909fa38a6539302b03ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Plik zawiera definicję klasy <a class="el" href="a00115.html" title="Klasa modeluje pojęcie Drona w 3 wymiarach.">Dron</a>, która modeluje pojęcie drona w 3 wymiarze. </p>
+
+<p class="definition">Definicja w pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="a9f5ca209b61eae19f489e3af0ab5637d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5ca209b61eae19f489e3af0ab5637d">&#9670;&nbsp;</a></span>ILOSC_ROTOROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ILOSC_ROTOROW&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00015">15</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a7d104782d6322f7698c1486b6e00d6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d104782d6322f7698c1486b6e00d6c1">&#9670;&nbsp;</a></span>ILOSC_WIERZ_LINII_TWORZACEJ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ILOSC_WIERZ_LINII_TWORZACEJ&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00016">16</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="ab954ab5c53b1cd693c5bb1d24b25db4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab954ab5c53b1cd693c5bb1d24b25db4a">&#9670;&nbsp;</a></span>PLIK_KORPUSU_DRONA1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_KORPUSU_DRONA1&#160;&#160;&#160;&quot;dat/korpus_drana1.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00021">21</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a346a5da43df2b2a2038e95c893ccb129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346a5da43df2b2a2038e95c893ccb129">&#9670;&nbsp;</a></span>PLIK_TRASY_PRZELOTU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_TRASY_PRZELOTU&#160;&#160;&#160;&quot;dat/trasa_przelotu.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00022">22</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a6e3c7e6d1a9951c3283dd637275d64e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3c7e6d1a9951c3283dd637275d64e6">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON1_KORPUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON1_KORPUS&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Korpus.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00023">23</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a006a9471b4119eb1bec2a292c4315acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006a9471b4119eb1bec2a292c4315acd">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON1_ROTOR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON1_ROTOR1&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor1.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00024">24</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="ac12a91e7d228562853617e2c0ea678d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12a91e7d228562853617e2c0ea678d1">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON1_ROTOR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON1_ROTOR2&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor2.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00025">25</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a103096588ce806b970bbc303169c3fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103096588ce806b970bbc303169c3fde">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON1_ROTOR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON1_ROTOR3&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor3.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00026">26</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a89ffdad9e2ea0df67866274330a10950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ffdad9e2ea0df67866274330a10950">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON1_ROTOR4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON1_ROTOR4&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron1_Rotor4.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00027">27</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a1749db85ab4dbc2e3e1a2d1043e485d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1749db85ab4dbc2e3e1a2d1043e485d4">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON2_KORPUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON2_KORPUS&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Korpus.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00028">28</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a2789441753973ed69ce77974996448ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2789441753973ed69ce77974996448ea">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON2_ROTOR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON2_ROTOR1&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor1.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00029">29</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="ada702919d023df75659eb3dd12475e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada702919d023df75659eb3dd12475e29">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON2_ROTOR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON2_ROTOR2&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor2.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00030">30</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="afa470c314a09603afc6f998dc6b90723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa470c314a09603afc6f998dc6b90723">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON2_ROTOR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON2_ROTOR3&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor3.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00031">31</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a951e695fd984f50d2a2429ffe8d17b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951e695fd984f50d2a2429ffe8d17b50">&#9670;&nbsp;</a></span>PLIK_WLASCIWY__DRON2_ROTOR4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WLASCIWY__DRON2_ROTOR4&#160;&#160;&#160;&quot;dat/PlikWlasciwy_Dron2_Rotor4.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00032">32</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="ac10437a5f7133af7fe8703e7e350105e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac10437a5f7133af7fe8703e7e350105e">&#9670;&nbsp;</a></span>PLIK_WZORCOWEGO_GRANIASTOSLUPA6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WZORCOWEGO_GRANIASTOSLUPA6&#160;&#160;&#160;&quot;bryly_wzorcowe/graniastoslup6.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00020">20</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="ab9d785760df7d38b8c4fe1d84f4d978d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d785760df7d38b8c4fe1d84f4d978d">&#9670;&nbsp;</a></span>PLIK_WZORCOWEGO_SZESCIANU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLIK_WZORCOWEGO_SZESCIANU&#160;&#160;&#160;&quot;bryly_wzorcowe/szescian.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00019">19</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="aea48e83258234ce95a24fd1293dd263b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea48e83258234ce95a24fd1293dd263b">&#9670;&nbsp;</a></span>SKALA_KORPUSU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKALA_KORPUSU&#160;&#160;&#160;10,8,4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00018">18</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="afb24cb0ce84e3b9f5e69c5b1ab635fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb24cb0ce84e3b9f5e69c5b1ab635fa8">&#9670;&nbsp;</a></span>SKALA_ROTORA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKALA_ROTORA&#160;&#160;&#160;8,8,2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00017">17</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a567b5efa300c308fcd7e8d89ccec7673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567b5efa300c308fcd7e8d89ccec7673">&#9670;&nbsp;</a></span>SKOK_OBROTU_ROTOROW_stopnie <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKOK_OBROTU_ROTOROW_stopnie&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00038">38</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a567b5efa300c308fcd7e8d89ccec7673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567b5efa300c308fcd7e8d89ccec7673">&#9670;&nbsp;</a></span>SKOK_OBROTU_ROTOROW_stopnie <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKOK_OBROTU_ROTOROW_stopnie&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00038">38</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a00c18c9030c4c4a26fd749de8ca3b8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c18c9030c4c4a26fd749de8ca3b8e0">&#9670;&nbsp;</a></span>TRANSLACJA_ROTOR_LEWY_PRZEDNI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRANSLACJA_ROTOR_LEWY_PRZEDNI&#160;&#160;&#160;5,4,5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00033">33</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a24db7f4c6844e8670930a74990156a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24db7f4c6844e8670930a74990156a79">&#9670;&nbsp;</a></span>TRANSLACJA_ROTOR_LEWY_TYLNY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRANSLACJA_ROTOR_LEWY_TYLNY&#160;&#160;&#160;-5,4,5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00035">35</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a18f39d9d8f51d469931ed86146b5ea17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f39d9d8f51d469931ed86146b5ea17">&#9670;&nbsp;</a></span>TRANSLACJA_ROTOR_PRAWY_PRZEDNI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRANSLACJA_ROTOR_PRAWY_PRZEDNI&#160;&#160;&#160;5,-4,5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00034">34</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<a id="a418e493572aed9390c03fc34fcbffabf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418e493572aed9390c03fc34fcbffabf">&#9670;&nbsp;</a></span>TRANSLACJA_ROTOR_PRAWY_TYLNY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRANSLACJA_ROTOR_PRAWY_TYLNY&#160;&#160;&#160;-5,-4,5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="a00020_source.html#l00036">36</a> pliku <a class="el" href="a00020_source.html">Dron.hh</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a97031d4881e90628053bee63cc340600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97031d4881e90628053bee63cc340600">&#9670;&nbsp;</a></span>ObrocWzgledemOsiOZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObrocWzgledemOsiOZ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>KatObrotu_st</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00059.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Wktr3D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transformuje współrzędne <code>x</code> i <code>y</code> dokonując obrót o zadany kąt. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">KatObrotu_st</td><td>- kąt, o który ma być zrealizowany obrót. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">Wktr3D</td><td>- Refeerecnja do obiektu klasy Wektor3D, która przechowuje dane o obracanym wektorze wokół osi OZ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="a00065_source.html#l00074">74</a> pliku <a class="el" href="a00065_source.html">Dron.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">double</span> Kat_rad = <a class="code" href="a00065.html#aa21c27789427909fa38a6539302b03ca">StopnieNaRadiany</a>(KatObrotu_st);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="a00135.html">Macierz3x3</a> MacRotTym1 = {cos(Kat_rad), -sin(Kat_rad),0, sin(Kat_rad), cos(Kat_rad),0,0,0,1};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Wktr3D= MacRotTym1*Wktr3D;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_a97031d4881e90628053bee63cc340600_cgraph.png" border="0" usemap="#a00020_a97031d4881e90628053bee63cc340600_cgraph" alt=""/></div>
+<map name="a00020_a97031d4881e90628053bee63cc340600_cgraph" id="a00020_a97031d4881e90628053bee63cc340600_cgraph">
+<area shape="rect" title="Funkcja pomocnicza &#45; Dokonuje obrotu wokół osi OZ." alt="" coords="5,5,160,32"/>
+<area shape="rect" href="a00065.html#aa21c27789427909fa38a6539302b03ca" title="Funkcja pomocnicza &#45; Przelicza wartość kąta ze stopni na radiany." alt="" coords="208,5,337,32"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_a97031d4881e90628053bee63cc340600_icgraph.png" border="0" usemap="#a00020_a97031d4881e90628053bee63cc340600_icgraph" alt=""/></div>
+<map name="a00020_a97031d4881e90628053bee63cc340600_icgraph" id="a00020_a97031d4881e90628053bee63cc340600_icgraph">
+<area shape="rect" title="Funkcja pomocnicza &#45; Dokonuje obrotu wokół osi OZ." alt="" coords="1571,102,1725,128"/>
+<area shape="rect" href="a00115.html#af6d841c2f7984baf6cc2fbdacdc23666" title="Transformuje cały korpus." alt="" coords="1365,126,1512,168"/>
+<area shape="rect" href="a00115.html#a97a7d40859f605969542babee3b586c4" title="Ustawia odpowiednie parametry do Lotu Poziomego Drona." alt="" coords="628,24,800,51"/>
+<area shape="rect" href="a00115.html#a92bf8e5428eed0eabf314908b35ecca7" title="Transformuje cały jeden Rotor." alt="" coords="1365,61,1512,102"/>
+<area shape="rect" href="a00115.html#ac7a56f32f2aa0f8d7f92299ceea03e88" title="Oblicza i Dodaje punkty Sciezki do kontenera sekwencyjnego vector." alt="" coords="1355,192,1523,233"/>
+<area shape="rect" href="a00115.html#a93d08cb51d9659816e87e08f21b71a49" title="Ustawia dron w żądanej pozycji." alt="" coords="1129,113,1276,154"/>
+<area shape="rect" href="a00115.html#aaf59ac06e0dd549df191931be35a1f4c" title="Wykonuje Lot Drona." alt="" coords="888,75,1011,102"/>
+<area shape="rect" href="a00115.html#a940d9ee58903d674b8e352cf559b3fa5" title="Wykonuje Zmianę orientacji Drona." alt="" coords="848,126,1051,152"/>
+<area shape="rect" href="a00115.html#a7806d0312e7e58912780d0f016d58c79" title="Ustawia odpowiednie parametry do Lotu Pionowego Drona." alt="" coords="628,75,800,102"/>
+<area shape="rect" href="a00115.html#ae6ea05acecf80e6f8aef995722a9c8f4" title="Animacja LotuDrona." alt="" coords="411,100,580,127"/>
+<area shape="rect" href="a00131.html#a5caea796ccb46f0f36f4191def4407d3" title=" " alt="" coords="196,93,363,134"/>
+<area shape="rect" href="a00131.html#ab2fc7d26649fefef233e2e0971e35146" title=" " alt="" coords="5,93,148,134"/>
+<area shape="rect" href="a00115.html#afa5212f342afb65b869aeb7884a0d771" title="Planuje Początkową trase Drona, zażądana przez użytkownika." alt="" coords="1099,182,1307,208"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa21c27789427909fa38a6539302b03ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21c27789427909fa38a6539302b03ca">&#9670;&nbsp;</a></span>StopnieNaRadiany()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StopnieNaRadiany </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Kat_st</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przelicza wartość kąta ze stopni na radiany. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Kat_st</td><td>- wartość kąta wyrażona w stopniach. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wartość przeliczonego kąta wyrażona w radianach. </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="a00065_source.html#l00063">63</a> pliku <a class="el" href="a00065_source.html">Dron.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> Kat_st*M_PI/180;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_aa21c27789427909fa38a6539302b03ca_icgraph.png" border="0" usemap="#a00020_aa21c27789427909fa38a6539302b03ca_icgraph" alt=""/></div>
+<map name="a00020_aa21c27789427909fa38a6539302b03ca_icgraph" id="a00020_aa21c27789427909fa38a6539302b03ca_icgraph">
+<area shape="rect" title="Funkcja pomocnicza &#45; Przelicza wartość kąta ze stopni na radiany." alt="" coords="1583,102,1712,128"/>
+<area shape="rect" href="a00065.html#a97031d4881e90628053bee63cc340600" title="Funkcja pomocnicza &#45; Dokonuje obrotu wokół osi OZ." alt="" coords="1380,102,1535,128"/>
+<area shape="rect" href="a00115.html#af6d841c2f7984baf6cc2fbdacdc23666" title="Transformuje cały korpus." alt="" coords="1175,126,1321,168"/>
+<area shape="rect" href="a00115.html#a97a7d40859f605969542babee3b586c4" title="Ustawia odpowiednie parametry do Lotu Poziomego Drona." alt="" coords="437,24,609,51"/>
+<area shape="rect" href="a00115.html#a92bf8e5428eed0eabf314908b35ecca7" title="Transformuje cały jeden Rotor." alt="" coords="1175,61,1321,102"/>
+<area shape="rect" href="a00115.html#ac7a56f32f2aa0f8d7f92299ceea03e88" title="Oblicza i Dodaje punkty Sciezki do kontenera sekwencyjnego vector." alt="" coords="1164,192,1332,233"/>
+<area shape="rect" href="a00115.html#a93d08cb51d9659816e87e08f21b71a49" title="Ustawia dron w żądanej pozycji." alt="" coords="939,113,1085,154"/>
+<area shape="rect" href="a00115.html#aaf59ac06e0dd549df191931be35a1f4c" title="Wykonuje Lot Drona." alt="" coords="697,75,820,102"/>
+<area shape="rect" href="a00115.html#a940d9ee58903d674b8e352cf559b3fa5" title="Wykonuje Zmianę orientacji Drona." alt="" coords="657,126,860,152"/>
+<area shape="rect" href="a00115.html#a7806d0312e7e58912780d0f016d58c79" title="Ustawia odpowiednie parametry do Lotu Pionowego Drona." alt="" coords="437,75,609,102"/>
+<area shape="rect" href="a00115.html#ae6ea05acecf80e6f8aef995722a9c8f4" title="Animacja LotuDrona." alt="" coords="220,100,389,127"/>
+<area shape="rect" href="a00131.html#a5caea796ccb46f0f36f4191def4407d3" title=" " alt="" coords="5,93,172,134"/>
+<area shape="rect" href="a00115.html#afa5212f342afb65b869aeb7884a0d771" title="Planuje Początkową trase Drona, zażądana przez użytkownika." alt="" coords="908,182,1116,208"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00065_html_aa21c27789427909fa38a6539302b03ca"><div class="ttname"><a href="a00065.html#aa21c27789427909fa38a6539302b03ca">StopnieNaRadiany</a></div><div class="ttdeci">double StopnieNaRadiany(double Kat_st)</div><div class="ttdoc">Funkcja pomocnicza - Przelicza wartość kąta ze stopni na radiany.</div><div class="ttdef"><b>Definition:</b> <a href="a00065_source.html#l00063">Dron.cpp:63</a></div></div>
+<div class="ttc" id="aa00135_html"><div class="ttname"><a href="a00135.html">Macierz</a></div><div class="ttdoc">Szablon Klasy modeluje pojęcie macierzy kwadratowej.</div><div class="ttdef"><b>Definition:</b> <a href="a00035_source.html#l00025">Macierz.hh:25</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_c0e5b474b65f5fb9aacabbe73e8767e4.html">PRACA DNI</a></li><li class="navelem"><a class="el" href="dir_3b030d9d5b9e48e84bcf677dcef751e4.html">Praca 7 czerwca</a></li><li class="navelem"><a class="el" href="dir_07e098effe35686b81f301e257e93fe3.html">DRONIK</a></li><li class="navelem"><a class="el" href="dir_2d88d5a780c219896f96d6acd5521563.html">prj</a></li><li class="navelem"><a class="el" href="dir_90684cf5b24e66c76aacf3334b813e09.html">inc</a></li><li class="navelem"><a class="el" href="a00020.html">Dron.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

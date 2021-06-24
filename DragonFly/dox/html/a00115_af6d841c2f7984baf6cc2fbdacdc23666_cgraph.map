@@ -1,0 +1,11 @@
+<map id="Dron::Oblicz_i_Zapisz_WspGlbKorpusu" name="Dron::Oblicz_i_Zapisz_WspGlbKorpusu">
+<area shape="rect" id="node1" title="Transformuje cały korpus." alt="" coords="5,173,152,214"/>
+<area shape="rect" id="node2" href="$a00065.html#a97031d4881e90628053bee63cc340600" title="Funkcja pomocnicza &#45; Dokonuje obrotu wokół osi OZ." alt="" coords="229,5,383,32"/>
+<area shape="rect" id="node4" href="$a00017.html#a1090bc63d4d23df1314588c576782181" title="Funkcja pomocniczna, sprawdzająca poprawność otwartego pliku wejściowego." alt="" coords="253,56,359,83"/>
+<area shape="rect" id="node5" href="$a00111.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Odpowiednio skladuje zadany Wierzchołek." alt="" coords="236,107,376,149"/>
+<area shape="rect" id="node6" href="$a00143.html#a840ce6903a4ea10b2ed92bf7bae6dfb3" title="Realizuje przejście od współrzednych z układu lokalnego bryły do układu lokalnego drona." alt="" coords="223,173,389,214"/>
+<area shape="rect" id="node7" href="$a00115.html#a60aacf24e2a8d1be30f06ecf68d28eb9" title="Realizuje przejście od współrzędnych lokalnych drona do współrzędnych globalnych sceny." alt="" coords="206,239,406,265"/>
+<area shape="rect" id="node8" href="$a00111.html#a6a50b95a5133b9e03888441843f7e2ba" title="Pozwala na dostęp do NazwyPlikuBrylyFinalnej." alt="" coords="209,290,403,331"/>
+<area shape="rect" id="node9" href="$a00111.html#a5a877f887d4a32adf29c319dcac2334e" title="Pozwala na dostęp do NazwyPlikuBrylyWzorcowej." alt="" coords="200,355,412,397"/>
+<area shape="rect" id="node3" href="$a00065.html#aa21c27789427909fa38a6539302b03ca" title="Funkcja pomocnicza &#45; Przelicza wartość kąta ze stopni na radiany." alt="" coords="460,5,589,32"/>
+</map>

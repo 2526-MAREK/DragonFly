@@ -1,0 +1,5 @@
+<map id="TransformujWspolrzednePunktu" name="TransformujWspolrzednePunktu">
+<area shape="rect" id="node1" title="Transformuje współrzędne pojedynczego punktu." alt="" coords="5,5,212,32"/>
+<area shape="rect" id="node2" href="$a00020.html#a4a71702afa1952a86355f2b49b2968aa" title="Dokonuje obrotu wokół osi OZ." alt="" coords="260,5,415,32"/>
+<area shape="rect" id="node3" href="$a00020.html#aa21c27789427909fa38a6539302b03ca" title="Przelicza wartość kąta ze stopni na radiany." alt="" coords="463,5,592,32"/>
+</map>

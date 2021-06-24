@@ -1,0 +1,9 @@
+<map id="InterfejsUzytkownika::WezDlugoscLotuPoziomego" name="InterfejsUzytkownika::WezDlugoscLotuPoziomego">
+<area shape="rect" id="node1" title=" " alt="" coords="1199,5,1389,47"/>
+<area shape="rect" id="node2" href="$a00115.html#ae6ea05acecf80e6f8aef995722a9c8f4" title="Animacja LotuDrona." alt="" coords="509,13,679,39"/>
+<area shape="rect" id="node6" href="$a00115.html#ac7a56f32f2aa0f8d7f92299ceea03e88" title="Oblicza i Dodaje punkty Sciezki do kontenera sekwencyjnego vector." alt="" coords="983,35,1151,76"/>
+<area shape="rect" id="node3" href="$a00131.html#a5caea796ccb46f0f36f4191def4407d3" title=" " alt="" coords="295,5,461,47"/>
+<area shape="rect" id="node4" href="$a00131.html#ab2fc7d26649fefef233e2e0971e35146" title=" " alt="" coords="104,5,247,47"/>
+<area shape="rect" id="node5" href="$a00086.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,56,39"/>
+<area shape="rect" id="node7" href="$a00115.html#afa5212f342afb65b869aeb7884a0d771" title="Planuje Początkową trase Drona, zażądana przez użytkownika." alt="" coords="727,38,935,65"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Dron::Oblicz_i_Zapisz_WspGlbRotora" name="Dron::Oblicz_i_Zapisz_WspGlbRotora">
+<area shape="rect" id="node1" title="Transformuje cały jeden Rotor." alt="" coords="5,202,152,243"/>
+<area shape="rect" id="node2" href="$a00068.html#a97031d4881e90628053bee63cc340600" title="Funkcja pomocnicza &#45; Dokonuje obrotu wokół osi OZ." alt="" coords="230,5,385,32"/>
+<area shape="rect" id="node4" href="$a00020.html#a1090bc63d4d23df1314588c576782181" title="Funkcja pomocniczna, sprawdzająca poprawność otwartego pliku wejściowego." alt="" coords="254,56,361,83"/>
+<area shape="rect" id="node5" href="$a00114.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Odpowiednio skladuje zadany Wierzchołek." alt="" coords="237,107,377,149"/>
+<area shape="rect" id="node6" href="$a00130.html#ae934a6edb3cd6753712d8bd76d5671f6" title="Realizuje przejście od współrzednych z układu lokalnego bryły do układu lokalnego drona." alt="" coords="223,173,391,214"/>
+<area shape="rect" id="node7" href="$a00118.html#a60aacf24e2a8d1be30f06ecf68d28eb9" title="Realizuje przejście od współrzędnych lokalnych drona do współrzędnych globalnych sceny." alt="" coords="207,239,407,265"/>
+<area shape="rect" id="node8" href="$a00130.html#aa8a3e23e342e62810c848e700eb56f60" title="Pozwala na dostęp do składowej prywatnej klasy: KatOreintacji_stopnie." alt="" coords="200,290,415,331"/>
+<area shape="rect" id="node9" href="$a00114.html#a6a50b95a5133b9e03888441843f7e2ba" title="Pozwala na dostęp do NazwyPlikuBrylyFinalnej." alt="" coords="210,355,405,397"/>
+<area shape="rect" id="node10" href="$a00114.html#a5a877f887d4a32adf29c319dcac2334e" title="Pozwala na dostęp do NazwyPlikuBrylyWzorcowej." alt="" coords="201,421,413,462"/>
+<area shape="rect" id="node3" href="$a00068.html#aa21c27789427909fa38a6539302b03ca" title="Funkcja pomocnicza &#45; Przelicza wartość kąta ze stopni na radiany." alt="" coords="463,5,592,32"/>
+</map>

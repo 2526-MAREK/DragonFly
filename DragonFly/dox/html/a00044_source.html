@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Plik źródłowy /home/marek/Pulpit/PRACA DNI/Praca 7 czerwca/DRONIK/prj/inc/Plaskowyz.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00044_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plaskowyz.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00044.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLASKOWYZ_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PLASKOWYZ_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00017.html">BrylaGeometryczna.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="a00147.html">Scena</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00139.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00139.html">Plaskowyz</a> : <span class="keyword">public</span> <a class="code" href="a00111.html">BrylaGeometryczna</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00139.html#acd81f21bca44782f8acd685bafe12587">   32</a></span>&#160;    <a class="code" href="a00151.html">Wektor3D</a> <a class="code" href="a00139.html#acd81f21bca44782f8acd685bafe12587">Polozenie</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="a00139.html#a580c312164f3be4d1aa4f7ca4b5a04ab">Plaskowyz</a>(<span class="keyword">const</span> std::string &amp; s1 = <span class="stringliteral">&quot;brak&quot;</span>, <span class="keyword">const</span> std::string &amp; s2 = <span class="stringliteral">&quot;brak&quot;</span>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a> &amp; SkalaBrylaTym ={0,0,0}, <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a> &amp; PolozenieTym = {0,0,0});    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00139.html#a0d007be0cd0d27cfd3bcc35cc74f6219">Tworz</a>()<span class="keyword">const override</span> ;  </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00139.html#a8761ee38c422c28db730677c3c4e752a">Usun</a>()<span class="keyword">const override</span>; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="a00151.html">Wektor3D</a> <a class="code" href="a00139.html#ac07948442f19af253cb55774e186ee4f">TransformujPolozenie</a>(<span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; Wierz) <span class="keyword">const</span>;        </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00139.html#a86e3a027a85560ebc4967e65603a9749">   56</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="a00139.html#a86e3a027a85560ebc4967e65603a9749">NazwaPrzeszkody</a>()<span class="keyword"> const override </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;Plaskowyz&quot;</span>;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00139.html#afe502dc21ab4376f805a4de1f10b167e">   62</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00151.html">Wektor3D</a>&amp; <a class="code" href="a00139.html#afe502dc21ab4376f805a4de1f10b167e">WezPolozeniePrzeszkody</a>()<span class="keyword"> const  override </span>{<span class="keywordflow">return</span> <a class="code" href="a00139.html#acd81f21bca44782f8acd685bafe12587">Polozenie</a>;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00139_html_a580c312164f3be4d1aa4f7ca4b5a04ab"><div class="ttname"><a href="a00139.html#a580c312164f3be4d1aa4f7ca4b5a04ab">Plaskowyz::Plaskowyz</a></div><div class="ttdeci">Plaskowyz(const std::string &amp;s1=&quot;brak&quot;, const std::string &amp;s2=&quot;brak&quot;, const Wektor3D &amp;SkalaBrylaTym={0, 0, 0}, const Wektor3D &amp;PolozenieTym={0, 0, 0})</div><div class="ttdoc">Konstruktor parametryczny klasy GoraZOstrymSzczytem z wartościami domyślnymi.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00013">Plaskowyz.cpp:13</a></div></div>
+<div class="ttc" id="aa00017_html"><div class="ttname"><a href="a00017.html">BrylaGeometryczna.hh</a></div><div class="ttdoc">Definicja klasy BrylaGeometryczna.</div></div>
+<div class="ttc" id="aa00139_html_a8761ee38c422c28db730677c3c4e752a"><div class="ttname"><a href="a00139.html#a8761ee38c422c28db730677c3c4e752a">Plaskowyz::Usun</a></div><div class="ttdeci">virtual bool Usun() const override</div><div class="ttdoc">Usuwa bryłę reprezentującą Górę z Długą Grania.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00068">Plaskowyz.cpp:68</a></div></div>
+<div class="ttc" id="aa00139_html_ac07948442f19af253cb55774e186ee4f"><div class="ttname"><a href="a00139.html#ac07948442f19af253cb55774e186ee4f">Plaskowyz::TransformujPolozenie</a></div><div class="ttdeci">Wektor3D TransformujPolozenie(const Wektor3D &amp;Wierz) const</div><div class="ttdoc">Tansformuje Polozenie o zadany Wektor.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00095">Plaskowyz.cpp:95</a></div></div>
+<div class="ttc" id="aa00111_html"><div class="ttname"><a href="a00111.html">BrylaGeometryczna</a></div><div class="ttdoc">Klasa modeluje pojęcie BrylyGeometrycznej.</div><div class="ttdef"><b>Definition:</b> <a href="a00017_source.html#l00025">BrylaGeometryczna.hh:25</a></div></div>
+<div class="ttc" id="aa00139_html_acd81f21bca44782f8acd685bafe12587"><div class="ttname"><a href="a00139.html#acd81f21bca44782f8acd685bafe12587">Plaskowyz::Polozenie</a></div><div class="ttdeci">Wektor3D Polozenie</div><div class="ttdoc">Określa położenie Plaskowyzu.</div><div class="ttdef"><b>Definition:</b> <a href="a00044_source.html#l00032">Plaskowyz.hh:32</a></div></div>
+<div class="ttc" id="aa00139_html"><div class="ttname"><a href="a00139.html">Plaskowyz</a></div><div class="ttdoc">Klasa modeluje pojęcie Plaskowyzu.</div><div class="ttdef"><b>Definition:</b> <a href="a00044_source.html#l00023">Plaskowyz.hh:23</a></div></div>
+<div class="ttc" id="aa00147_html"><div class="ttname"><a href="a00147.html">Scena</a></div><div class="ttdoc">Klasa modeluje pojęcie Sceny.</div><div class="ttdef"><b>Definition:</b> <a href="a00050_source.html#l00045">Scena.hh:45</a></div></div>
+<div class="ttc" id="aa00139_html_a0d007be0cd0d27cfd3bcc35cc74f6219"><div class="ttname"><a href="a00139.html#a0d007be0cd0d27cfd3bcc35cc74f6219">Plaskowyz::Tworz</a></div><div class="ttdeci">virtual bool Tworz() const override</div><div class="ttdoc">Tworzy bryłę reprezentującą płaskowyż.</div><div class="ttdef"><b>Definition:</b> <a href="a00089_source.html#l00029">Plaskowyz.cpp:29</a></div></div>
+<div class="ttc" id="aa00139_html_afe502dc21ab4376f805a4de1f10b167e"><div class="ttname"><a href="a00139.html#afe502dc21ab4376f805a4de1f10b167e">Plaskowyz::WezPolozeniePrzeszkody</a></div><div class="ttdeci">virtual const Wektor3D &amp; WezPolozeniePrzeszkody() const override</div><div class="ttdoc">Metoda pozwalająca na dostęp do położenia bryły.</div><div class="ttdef"><b>Definition:</b> <a href="a00044_source.html#l00062">Plaskowyz.hh:62</a></div></div>
+<div class="ttc" id="aa00139_html_a86e3a027a85560ebc4967e65603a9749"><div class="ttname"><a href="a00139.html#a86e3a027a85560ebc4967e65603a9749">Plaskowyz::NazwaPrzeszkody</a></div><div class="ttdeci">virtual const char * NazwaPrzeszkody() const override</div><div class="ttdoc">Metoda pozwala dowiedziec się z jaka bryla pracujemy.</div><div class="ttdef"><b>Definition:</b> <a href="a00044_source.html#l00056">Plaskowyz.hh:56</a></div></div>
+<div class="ttc" id="aa00151_html"><div class="ttname"><a href="a00151.html">Wektor&lt; 3 &gt;</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_c0e5b474b65f5fb9aacabbe73e8767e4.html">PRACA DNI</a></li><li class="navelem"><a class="el" href="dir_3b030d9d5b9e48e84bcf677dcef751e4.html">Praca 7 czerwca</a></li><li class="navelem"><a class="el" href="dir_07e098effe35686b81f301e257e93fe3.html">DRONIK</a></li><li class="navelem"><a class="el" href="dir_2d88d5a780c219896f96d6acd5521563.html">prj</a></li><li class="navelem"><a class="el" href="dir_90684cf5b24e66c76aacf3334b813e09.html">inc</a></li><li class="navelem"><a class="el" href="a00044.html">Plaskowyz.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

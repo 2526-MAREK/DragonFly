@@ -1,0 +1,10 @@
+<map id="Plaskowyz::Tworz" name="Plaskowyz::Tworz">
+<area shape="rect" id="node1" title="Tworzy bryłę reprezentującą płaskowyż." alt="" coords="5,165,131,192"/>
+<area shape="rect" id="node2" href="$a00017.html#a5ce69bc05bae299a686a7cf2f4419bf6" title="Funkcja pomocniczna, sprawdzająca czy udało się wczytac dane." alt="" coords="203,5,369,32"/>
+<area shape="rect" id="node3" href="$a00017.html#a68f34048ab8ebf478f57fd99556e1463" title="Funkcja pomocniczna, sprawdzająca czy udało się zapisac dane." alt="" coords="205,56,367,83"/>
+<area shape="rect" id="node4" href="$a00017.html#a1090bc63d4d23df1314588c576782181" title="Funkcja pomocniczna, sprawdzająca poprawność otwartego pliku wejściowego." alt="" coords="233,107,339,133"/>
+<area shape="rect" id="node5" href="$a00111.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Odpowiednio skladuje zadany Wierzchołek." alt="" coords="216,158,356,199"/>
+<area shape="rect" id="node6" href="$a00139.html#ac07948442f19af253cb55774e186ee4f" title="Tansformuje Polozenie o zadany Wektor." alt="" coords="179,224,393,251"/>
+<area shape="rect" id="node7" href="$a00111.html#a6a50b95a5133b9e03888441843f7e2ba" title="Pozwala na dostęp do NazwyPlikuBrylyFinalnej." alt="" coords="189,275,383,317"/>
+<area shape="rect" id="node8" href="$a00111.html#a5a877f887d4a32adf29c319dcac2334e" title="Pozwala na dostęp do NazwyPlikuBrylyWzorcowej." alt="" coords="180,341,392,382"/>
+</map>
